@@ -32,7 +32,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Dallas" {
   interval       = var.test_interval
   direction = "BIDIRECTIONAL"
   protocol = "TCP"
-  target_agent_id = "26kam"
+  target_agent_id = "26"
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
   agents {
