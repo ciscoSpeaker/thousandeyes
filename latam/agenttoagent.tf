@@ -5,7 +5,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Lima" {
   direction = "BIDIRECTIONAL"
   protocol = "TCP"
   target_agent_id = "66222"
-  bgp_measurements = true
+  bgp_measurements = false
   alerts_enabled = true
   agents {
     agent_id = 63438 
@@ -19,7 +19,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara" {
   direction = "BIDIRECTIONAL"
   protocol = "TCP"
   target_agent_id = "320"
-  bgp_measurements = true
+  bgp_measurements = false
   alerts_enabled = true
   agents {
     agent_id = 63438 
