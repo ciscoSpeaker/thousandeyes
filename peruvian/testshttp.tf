@@ -2,7 +2,7 @@ locals {
   testshttp = csvdecode(file("${path.module}/testshttp.csv"))
   }
 
-resource "thousandeyes_http_server" "http_" {
+resource "thousandeyes_http_server" "http" {
   for_each = tomap({ for inst in local.testshttp : inst.test_resource => inst })
   test_name =  each.value.test_name
   description    = "by terraform"

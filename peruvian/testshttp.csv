@@ -1,4 +1,4 @@
 test_resource,test_name,test_url
-"app_thousandeyes_com","app.thousandeyes.com HTTP","https://app.thousandeyes.com"
-"www_lacnic_net","www.lacnic.net HTTP","https://www.lacnic.net"
-"www_cisco_com","www.cisco.com HTTP","https://www.cisco.com"
+"app_thousandeyes_com","app.thousandeyes.com","https://app.thousandeyes.com"
+"www_lacnic_net","www.lacnic.net","https://www.lacnic.net"
+"www_cisco_com","www.cisco.com","https://www.cisco.com"
