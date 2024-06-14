@@ -19,6 +19,6 @@ variable "test_interval" {
 }
 
 variable "alerts" {
-  type  = bool
+  type  = string
 }
 
