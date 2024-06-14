@@ -12,7 +12,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Lima" {
   }
 }
 
-resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara {
+resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara" {
   test_name      = "MexicoCity-to-Guadalajara"
   description    = "by terraform at ${local.now}"
   interval       = var.test_interval
