@@ -6,7 +6,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Lima" {
   protocol = "TCP"
   target_agent_id = "66222"
   bgp_measurements = false
-  alerts_enabled = true
+  alerts_enabled = false
   agents {
     agent_id = 63438 
   }
@@ -20,7 +20,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara" {
   protocol = "TCP"
   target_agent_id = "320"
   bgp_measurements = false
-  alerts_enabled = true
+  alerts_enabled = false
   agents {
     agent_id = 63438 
   }
