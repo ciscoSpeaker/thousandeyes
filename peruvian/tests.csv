@@ -1,4 +1,4 @@
-test_resource,test_name,test_url
-"app_thousandeyes_com","app.thousandeyes.com","https://app.thousandeyes.com"
-"www_lacnic_net","www.lacnic.net","https://www.lacnic.net"
-"www_cisco_com","www.cisco.com","https://www.cisco.com"
+test_resource,test_name,test_url,test_domain
+"app_thousandeyes_com","app.thousandeyes.com","https://app.thousandeyes.com","app.thousandeyes.com ANY"
+"www_lacnic_net","www.lacnic.net","https://www.lacnic.net","www.lacnic.net ANY"
+"www_cisco_com","www.cisco.com","https://www.cisco.com","www.cisco.com ANY"

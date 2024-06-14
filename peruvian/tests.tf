@@ -24,7 +24,7 @@ resource "thousandeyes_dns_trace" "dns" {
   description    = "by terraform"
   interval       = var.test_interval
   alerts_enabled = var.alerts
-  domain = each.value.test_url
+  domain = each.value.test_domain
   dynamic "agents" {
     for_each = local.agentId
     content  {
