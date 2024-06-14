@@ -1,6 +1,6 @@
 test_resource,test_name,test_url,test_domain
 "www_lacnic_net","www.lacnic.net","https://www.lacnic.net","www.lacnic.net ANY"
-"elcomercio_pe","elcomercio.pe"","https://elcomercio.pe","elcomercio.pe ANY"
+"elcomercio_pe","elcomercio.pe","https://elcomercio.pe","elcomercio.pe ANY"
 "larepublica_pe","larepublica.pe","https://larepublica.pe","larepublica.pe ANY"
 "rpp_pe","rpp.pe","https://rpp.pe","rpp.pe ANY"
 "interbank_pe","interbank.pe","https://interbank.pe","interbank.pe ANY"
