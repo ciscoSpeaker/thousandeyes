@@ -1,9 +1,14 @@
-resource "thousandeyes_http_server" "http_thousandeyes_com" {
-  test_name =  "app.thousandeyes.com HTTP"
+locals {
+  testshttp = csvdecode(file("${path.module}/testshttp.csv"))
+  }
+
+resource "thousandeyes_http_server" "http_" {
+  for_each = tomap({ for inst in local.testshttp : inst.test_resource => inst })
+  test_name =  each.value.test_name
   description    = "by terraform at ${local.now}"
   interval       = var.test_interval
   alerts_enabled = var.alerts
-  url = "https://www.thousandeyes.com"
+  url = each.value.test_url
   bgp_measurements = var.bgp
  dynamic "agents" {
     for_each = local.agentId
