@@ -4,7 +4,7 @@ terraform {
     organization = "thousandeyes"
 
     workspaces {
-      name = "latam"
+      name = "peruvian"
     }
   }
 
