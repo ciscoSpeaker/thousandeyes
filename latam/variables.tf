@@ -22,3 +22,6 @@ variable "alerts" {
   type  = string
 }
 
+variable "bgp" {
+  type  = string
+}
