@@ -17,3 +17,8 @@ variable "te_timeout" {
 variable "test_interval" {
   type  = number
 }
+
+variable "alerts" {
+  type  = bool
+}
+
