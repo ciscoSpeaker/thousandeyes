@@ -28,7 +28,7 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara" {
 
 resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Dallas" {
   test_name      = "MexicoCity-to-Dallas"
-  description    = "by terraform at"
+  description    = "by terraform"
   interval       = var.test_interval
   direction = "BIDIRECTIONAL"
   protocol = "TCP"
