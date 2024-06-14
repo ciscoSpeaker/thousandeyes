@@ -1,4 +1,4 @@
-resource "thousandeyes_http_server" "http_server_app.thousandeyes.com" {
+resource "thousandeyes_http_server" "http_thousandeyes_com" {
   test_name =  "app.thousandeyes.com HTTP"
   description    = "by terraform at ${local.now}"
   interval       = var.test_interval
