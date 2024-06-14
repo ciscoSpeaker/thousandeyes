@@ -13,7 +13,7 @@ test_resource,test_name,test_url,test_domain
 "www_sunat_gob_pe","www.sunat.gob.pe","https://www.sunat.gob.pe","www.sunat.gob.pe ANY"
 "www_falabella_com_pe","www.falabella.com.pe","https://www.falabella.com.pe","www.falabella.com.pe ANY"
 "www_movistar_com_pe","www.movistar.com.pe","https://www.movistar.com.pe","www.movistar.com.pe ANY"
-"win_pe","win.pe","https://win.pe/","win.pe ANY"
+"win_pe","win.pe","https://win.pe","win.pe ANY"
 "vallesol_neolms_com","vallesol.neolms.com","https://vallesol.neolms.com","vallesol.neolms.com ANY"
 "www_vallesol_edu_pe","www_vallesol_edu_pe","https://www.vallesol.edu.pe","www.vallesol.edu.pe ANY"
 "netacad_webex_com","netacad.webex.com","https://netacad.webex.com","netacad.webex.com ANY"
