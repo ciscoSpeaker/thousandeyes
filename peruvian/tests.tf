@@ -26,7 +26,7 @@ resource "thousandeyes_dns_trace" "dns" {
   alerts_enabled = var.alerts
   domain = each.value.test_url
   dynamic "agents" {
-    for_each = local.agentAddId
+    for_each = local.agentId
     content  {
     agent_id   = agents.value
     }
