@@ -5,7 +5,7 @@ locals {
 resource "thousandeyes_http_server" "http_" {
   for_each = tomap({ for inst in local.testshttp : inst.test_resource => inst })
   test_name =  each.value.test_name
-  description    = "by terraform at ${local.now}"
+  description    = "by terraform"
   interval       = var.test_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
