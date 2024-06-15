@@ -15,7 +15,7 @@ test_resource,test_name,test_url,test_domain
 "www_movistar_com_pe","www.movistar.com.pe","https://www.movistar.com.pe","www.movistar.com.pe ANY"
 "win_pe","win.pe","https://win.pe","win.pe ANY"
 "vallesol_neolms_com","vallesol.neolms.com","https://vallesol.neolms.com","vallesol.neolms.com ANY"
-"www_vallesol_edu_pe","www_vallesol_edu_pe","https://www.vallesol.edu.pe","www.vallesol.edu.pe ANY"
+"www_vallesol_edu_pe","www.vallesol.edu.pe","https://www.vallesol.edu.pe","www.vallesol.edu.pe ANY"
 "netacad_webex_com","netacad.webex.com","https://netacad.webex.com","netacad.webex.com ANY"
 "www_netacad_com","www.netacad.com","https://www.netacad.com","www.netacad.com ANY"
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY"
