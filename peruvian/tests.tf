@@ -26,7 +26,7 @@ resource "thousandeyes_dns_server" "dns" {
   alerts_enabled = var.alerts
   domain = each.value.test_domain
   dynamic "dns_servers" {
-    for_each = local.server_dns_id_dns
+    for_each = local.server_dns_name_ip
     content {
       server_name = dns_servers.value
     }
