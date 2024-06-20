@@ -3,7 +3,3 @@ name,dns
 "google secondary","8.8.4.4"
 "quad9 main","9.9.9.9"
 "quad9 main secondary","149.112.112.112"
-"cloudflare main","1.1.1.1"
-"cloudflare secondary","1.0.0.1"
-"dns watch main","84.200.69.80"
-"dns watch secondary","84.200.70.40"
