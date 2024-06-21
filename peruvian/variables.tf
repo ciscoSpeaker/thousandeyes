@@ -14,10 +14,17 @@ variable "te_timeout" {
   type  = number
 }
 
-variable "test_interval" {
+variable "test_http_interval" {
   type  = number
 }
 
+variable "test_dns_interval" {
+  type  = number
+}
+
+variable "test_vpn_interval" {
+  type  = number
+}
 variable "alerts" {
   type  = string
 }

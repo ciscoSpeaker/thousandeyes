@@ -7,7 +7,7 @@ resource "thousandeyes_agent_to_server" "vpn" {
   test_name =  each.value.vpn
   server = each.value.vpn
   protocol = each.value.protocol
-  interval  = var.test_interval
+  interval  = var.test_vpn_interval
   alerts_enabled = var.alerts
   bgp_measurements = var.bgp
   dynamic "agents" {
