@@ -27,5 +27,3 @@ test_resource,test_name,test_url,test_domain
 "www_upao_edu_pe","www.upao.edu.pe","https://www.upao.edu.pe","www.upao.edu.pe ANY"
 "www_roblox_com","www.roblox.com","https://www.roblox.com","www.roblox.com ANY"
 "www_cip_org_pe","www.cip.org.pe","https://www.cip.org.pe","www.cip.org.pe ANY"
-
-
