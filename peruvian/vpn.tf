@@ -5,7 +5,7 @@ locals {
 resource "thousandeyes_agent_to_server" "vpn" {
   for_each = tomap({ for inst in local.vpn : inst.vpn_ip => inst })
   test_name =  each.value.vpn
-  server = each.value.vpn
+  server = each.value.vpn_ip
   protocol = each.value.protocol
   interval  = var.test_vpn_interval
   alerts_enabled = var.alerts
