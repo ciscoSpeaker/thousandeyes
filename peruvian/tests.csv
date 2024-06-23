@@ -13,7 +13,6 @@ test_resource,test_name,test_url,test_domain
 "win_pe","win.pe","https://win.pe","win.pe ANY"
 "vallesol_neolms_com","vallesol.neolms.com","https://vallesol.neolms.com","vallesol.neolms.com ANY"
 "www_vallesol_edu_pe","www.vallesol.edu.pe","https://www.vallesol.edu.pe","www.vallesol.edu.pe ANY"
-"netacad_webex_com","netacad.webex.com","https://netacad.webex.com","netacad.webex.com ANY"
 "www_netacad_com","www.netacad.com","https://www.netacad.com","www.netacad.com ANY"
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY"
 "posgradouni_neolms_com","posgradouni.neolms.com","https://posgradouni.neolms.com","posgradouni.neolms.com ANY"
@@ -22,8 +21,6 @@ test_resource,test_name,test_url,test_domain
 "www_udep_edu_pe","www.udep.edu.pe","https://www.udep.edu.pe","www.udep.edu.pe ANY"
 "www_unitru_edu_pe","www.unitru.edu.pe","https://www.unitru.edu.pe","www.unitru.edu.pe ANY"
 "www_utp_edu_pe","www.utp.edu.pe","https://www.utp.edu.pe","www.utp.edu.pe ANY"
-"www_movistar_com_pe","www.movistar.com.pe","https://www.movistar.com.pe","www.movistar.com.pe ANY"
-"www_unp_edu_pe","www.unp.edu.pe","https://www.unp.edu.pe","www.unp.edu.pe ANY"
-"www_upao_edu_pe","www.upao.edu.pe","https://www.upao.edu.pe","www.upao.edu.pe ANY"
 "www_roblox_com","www.roblox.com","https://www.roblox.com","www.roblox.com ANY"
 "www_cip_org_pe","www.cip.org.pe","https://www.cip.org.pe","www.cip.org.pe ANY"
+
