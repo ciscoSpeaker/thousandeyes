@@ -19,10 +19,10 @@ variable "test_A2A_interval" {
 }
 
 variable "test_A2A_direction" {
-  type  = number
+  type  = string
 }
 variable "test_A2A_protocol" {
-  type  = number
+  type  = string
 }
 
 variable "alerts" {
