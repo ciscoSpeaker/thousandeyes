@@ -14,7 +14,14 @@ variable "te_timeout" {
   type  = number
 }
 
-variable "test_interval" {
+variable "test_A2A_interval" {
+  type  = number
+}
+
+variable "test_A2A_direction" {
+  type  = number
+}
+variable "test_A2A_protocol" {
   type  = number
 }
 
