@@ -4,7 +4,3 @@ locals {
   agentFromLima_id = keys(local.agentsFromLima_id_name)
   agentFromLima_name = values(local.agentsFromLima_id_name) 
   }
-
-#output "agents_from_Lima" {
-#  value = local.agentsFromLima_id_name
-#}
