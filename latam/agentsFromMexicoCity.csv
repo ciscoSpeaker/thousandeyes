@@ -1,8 +1,4 @@
 agent_id,agent_name,agent_country,agent_location
-63438,"Mexico City, Mexico","MX","Mexico City, Mexico"
-838841,"Mexico City, Mexico - IPv6","MX","Mexico City, Mexico"
-1302649,"Mexico City, Mexico (TelMex)","MX","Mexico City, Mexico"
-1302650,"Mexico City, Mexico - IPv6 (TelMex)","MX","Mexico City, Mexico"
 320,"Guadalajara, Mexico","MX","Jalisco, Mexico"
 31865,"Guadalajara, Mexico - IPv6","MX","Jalisco, Mexico"
 946211,"Querétaro, Mexico (AWS Local Zone)","MX","Querétaro, Mexico"
@@ -69,3 +65,8 @@ agent_id,agent_name,agent_country,agent_location
 1270318,"Buenos Aires, Argentina (Claro)","AR","Buenos Aires F.D., Argentina"
 20904,"Montevideo, Uruguay","UY","Uruguay"
 95697,"Montevideo, Uruguay - IPv6","UY","Uruguay"
+66222,"Lima, Peru","PE","Lima, Peru"
+266386,"Lima, Peru - IPv6","PE","Lima, Peru"
+946241,"Lima, Peru (AWS Local Zone)","PE","Lima, Peru"
+1319574,"Lima, Peru (Claro)","PE","Lima, Peru"
+1319575,"Lima, Peru - IPv6 (Claro)","PE","Lima, Peru"

@@ -5,6 +5,6 @@ locals {
   agentFromLima_name = values(local.agentsFromLima_id_name) 
   }
 
-output "agents_from_Lima" {
-  value = local.agentsFromLima_id_name
-}
+#output "agents_from_Lima" {
+#  value = local.agentsFromLima_id_name
+#}
