@@ -8,9 +8,9 @@ resource "thousandeyes_agent_to_agent" "Lima" {
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
-    for_each = local.agentsLima
+    for_each = local.agentLima_id
     content  {
-    agent_id   = agents.key
+    agent_id   = agents.value
     }
   }
 }
