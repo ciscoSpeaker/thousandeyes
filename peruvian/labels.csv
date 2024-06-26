@@ -1,0 +1,7 @@
+label_resource,label_name,label_type
+"finance","finance","tests"
+"education","education","tests"
+"government","government","tests"
+"education","education","endpoint_tests"
+"peruvian_agents","peruvian","agents"
+"peruvian_agents","peruvian","endpoint_agents"
