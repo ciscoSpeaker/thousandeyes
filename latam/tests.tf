@@ -1,8 +1,8 @@
 resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Lima" {
   test_name      = "MexicoCity-to-Lima"
   interval       = var.test_A2A_interval
-  direction = "BIDIRECTIONAL"
-  protocol = "TCP"
+  direction = var.test_A2A_direction
+  protocol = var.test_A2A_protocol
   target_agent_id = "66222"
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
@@ -14,8 +14,8 @@ resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Lima" {
 resource "thousandeyes_agent_to_agent" "agent_to_agent_MexicoCity_Guadalajara" {
   test_name      = "MexicoCity-to-Guadalajara"
   interval       = var.test_A2A_interval
-  direction = "BIDIRECTIONAL"
-  protocol = "TCP"
+  direction = var.test_A2A_direction
+  protocol = var.test_A2A_protocol
   target_agent_id = "320"
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
