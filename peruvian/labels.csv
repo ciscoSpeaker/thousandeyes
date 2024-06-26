@@ -3,5 +3,3 @@ label_resource,label_name,label_type
 "education","education","tests"
 "government","government","tests"
 "peruvian","peruvian","agents"
-"peruvian_endpoint","peruvian_endpoint","endpoint_agents"
-"education_endpoint","education_endpoint","endpoint_tests"
