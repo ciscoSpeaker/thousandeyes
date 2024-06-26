@@ -1,6 +1,6 @@
 resource "thousandeyes_agent_to_agent" "Lima" {
   for_each = tomap({ for inst in local.latamAgentsFromLima_name_id : inst.agent_id => inst })
-  test_name =  "Lima to - " each.value.agent_name
+  test_name =  "Lima to - ${each.value.agent_name}"
   interval  = var.test_interval
   target_agent_id = each.value.agent_id
   direction = "BIDIRECTIONAL"

@@ -5,7 +5,7 @@ locals {
   latamAgentLimaCountry = values(local.latamAgentsLima_name_id) 
   }
 
-output "latam_agents" {
+output "latam_agents_Lima" {
   value = local.latamAgentsLima_name_id
 }
 
