@@ -1,9 +1,4 @@
 agent_id,agent_name,agent_country,agent_location
-66222,"Lima, Peru","PE","Lima, Peru"
-266386,"Lima, Peru - IPv6","PE","Lima, Peru"
-946241,"Lima, Peru (AWS Local Zone)","PE","Lima, Peru"
-1319574,"Lima, Peru (Claro)","PE","Lima, Peru"
-1319575,"Lima, Peru - IPv6 (Claro)","PE","Lima, Peru"
 320,"Guadalajara, Mexico","MX","Jalisco, Mexico"
 31865,"Guadalajara, Mexico - IPv6","MX","Jalisco, Mexico"
 63438,"Mexico City, Mexico","MX","Mexico City, Mexico"
