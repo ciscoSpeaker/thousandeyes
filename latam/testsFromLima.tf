@@ -4,6 +4,7 @@ resource "thousandeyes_agent_to_agent" "Lima" {
   interval  = var.test_interval
   target_agent_id = each.value.agend_id
   direction = "BIDIRECTIONAL"
+  protocol = "TCP"
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
