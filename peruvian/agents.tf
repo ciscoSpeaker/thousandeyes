@@ -2,6 +2,10 @@ locals {
   agentsLima = csvdecode(file("${path.module}/agentsLima.csv"))
   agentsLima_name_id = {for ag_name in local.agentsLima : ag_name.agent_name => ag_name.agent_id}
   }
+  
+#deleted
+#1319575,"Lima, Peru - IPv6 (Claro)","PE","Lima, Peru"
+#266386,"Lima, Peru - IPv6","PE","Lima, Peru"
 
 output "agents_Lima" {
   value = local.agentsLima_name_id
