@@ -19,3 +19,11 @@ locals {
 output "agents_RPi" {
   value = local.agentsRPi_name_id
 }
+
+locals {
+  agents = merge (agentsLima, agentsRPi)
+}
+
+output "agents_Lima_RPi" {
+  value = local.agents
+}
