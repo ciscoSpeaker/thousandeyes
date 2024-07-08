@@ -21,7 +21,7 @@ output "agents_RPi" {
 }
 
 locals {
-  agents = merge (local.agentsLima, local.agentsRPi)
+  agents = merge (local.agentsLima_id_name, local.agentsRPi_name_id)
 }
 
 output "agents_Lima_RPi" {
