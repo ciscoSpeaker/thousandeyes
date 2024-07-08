@@ -22,6 +22,6 @@ locals {
   agentPeru_id = values(local.agentsPeru) 
 }
 
-output "agents_Lima_RPi" {
+output "agents_Peru" {
   value = local.agentsPeru
 }
