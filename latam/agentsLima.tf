@@ -8,3 +8,7 @@ locals {
 output "agents_Lima" {
   value = local.agentsLima_id_name
 }
+
+# deleteIPv6
+# 1319575,"Lima, Peru - IPv6 (Claro)","PE","Lima, Peru"
+# 266386,"Lima, Peru - IPv6","PE","Lima, Peru"

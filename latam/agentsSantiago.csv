@@ -1,5 +1,4 @@
 agent_id,agent_name,agent_country,agent_location
 8230,"Santiago, Chile","CL","Santiago Metropolitan, Chile"
-281001,"Santiago, Chile - IPv6","CL","Santiago Metropolitan, Chile"
 600161,"Santiago, Chile (GCP southamerica-west1)","CL","Santiago Metropolitan, Chile"
 946231,"Santiago, Chile (AWS Local Zone)","CL","Santiago Metropolitan, Chile"

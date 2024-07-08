@@ -8,3 +8,6 @@ locals {
 output "agents_Santiago" {
   value = local.agentsSantiago_id_name
 }
+
+# delete IPv6
+# 281001,"Santiago, Chile - IPv6","CL","Santiago Metropolitan, Chile"
