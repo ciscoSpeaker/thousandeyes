@@ -12,7 +12,7 @@ resource "thousandeyes_agent_to_server" "vpn" {
   alerts_enabled = var.alerts
   bgp_measurements = var.bgp
   dynamic "agents" {
-    for_each = local.agentPeru_id
+    for_each = local.agentRPi_id
     content  {
     agent_id   = agents.value
     }
