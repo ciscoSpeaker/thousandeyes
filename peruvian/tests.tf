@@ -10,7 +10,7 @@ resource "thousandeyes_http_server" "http" {
   url = each.value.test_url
   bgp_measurements = var.bgp
   dynamic "agents" {
-    for_each = local.agentsRPiId
+    for_each = local.agentPeru_id
     content  {
     agent_id   = agents.value
     }
@@ -30,7 +30,7 @@ resource "thousandeyes_dns_server" "dns" {
     }
   }
   dynamic "agents" {
-    for_each = local.agentsRPiId
+    for_each = local.agentPeru_id
     content  {
     agent_id   = agents.value
     }
