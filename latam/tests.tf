@@ -33,7 +33,7 @@ resource "thousandeyes_agent_to_agent" "Lima_IPv6" {
 }
 
 resource "thousandeyes_agent_to_agent" "Mexico_City" {
-  for_each = tomap({ for inst in local.agentsFromMexicoCity : inst.agent_name => inst })
+  for_each = tomap({ for inst in local.agentsMexicoCityFrom : inst.agent_name => inst })
   test_name =  "Mexico City to ${each.value.agent_name}"
   target_agent_id = each.value.agent_id
   interval  = var.test_A2A_interval
@@ -42,7 +42,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City" {
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
-    for_each = local.agentMexicoCity_id
+    for_each = local.agentMexicoCityTo_id
     content  {
     agent_id   = agents.value
     }
@@ -50,7 +50,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City" {
 }
 
 resource "thousandeyes_agent_to_agent" "Santiago" {
-  for_each = tomap({ for inst in local.agentsFromSantiago : inst.agent_name => inst })
+  for_each = tomap({ for inst in local.agentsSantiagoFrom : inst.agent_name => inst })
   test_name =  "Santiago to ${each.value.agent_name}"
   target_agent_id = each.value.agent_id
   interval  = var.test_A2A_interval
@@ -59,7 +59,7 @@ resource "thousandeyes_agent_to_agent" "Santiago" {
   bgp_measurements = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
-    for_each = local.agentSantiago_id
+    for_each = local.agentSantiagoTo_id
     content  {
     agent_id   = agents.value
     }
