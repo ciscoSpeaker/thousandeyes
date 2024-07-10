@@ -8,7 +8,7 @@ resource "thousandeyes_http_server" "http" {
   interval       = var.test_http_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
-  # bgp_measurements = var.bgp
+  bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   dynamic "agents" {
     for_each = local.agentPeru_id
@@ -24,7 +24,7 @@ resource "thousandeyes_dns_server" "dns" {
   interval       = var.test_dns_interval
   alerts_enabled = var.alerts
   domain = each.value.test_domain
-  # bgp_measurements = var.bgp
+  bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   dynamic "dns_servers" {
     for_each = local.server_dns_name_ip
