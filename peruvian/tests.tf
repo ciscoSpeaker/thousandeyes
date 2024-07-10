@@ -8,8 +8,8 @@ resource "thousandeyes_http_server" "http" {
   interval       = var.test_http_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
- # bgp_measurements = var.bgp
- # use_public_bgp = var.bgp
+  # bgp_measurements = var.bgp
+  # use_public_bgp = var.bgp
   dynamic "agents" {
     for_each = local.agentPeru_id
     content  {
