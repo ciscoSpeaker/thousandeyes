@@ -6,7 +6,7 @@ locals {
   testsOutOut = csvdecode(file("${path.module}/testsOutOut.csv"))
   }
 
-resource "thousandeyes_http_server" "http" {
+resource "thousandeyes_http_server" "http_InOut" {
   for_each = tomap({ for inst in local.testsInOut : inst.test_resource => inst })
   test_name =  each.value.test_name
   interval       = var.test_http_interval
@@ -22,7 +22,7 @@ resource "thousandeyes_http_server" "http" {
   }
 }
 
-resource "thousandeyes_http_server" "http" {
+resource "thousandeyes_http_server" "http_OutOut" {
   for_each = tomap({ for inst in local.testsOutOut : inst.test_resource => inst })
   test_name =  each.value.test_name
   interval       = var.test_http_interval
