@@ -8,7 +8,7 @@ resource "thousandeyes_agent_to_agent" "Lima" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentLimaTo_id
     content  {
@@ -27,7 +27,7 @@ resource "thousandeyes_agent_to_agent" "Lima_IPv6" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentLimaIPv6To_id
     content  {
@@ -46,7 +46,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentMexicoCityTo_id
     content  {
@@ -65,7 +65,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City_IPv6" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentMexicoCityIPv6To_id
     content  {
@@ -84,7 +84,7 @@ resource "thousandeyes_agent_to_agent" "Santiago" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentSantiagoTo_id
     content  {
@@ -103,7 +103,7 @@ resource "thousandeyes_agent_to_agent" "Santiago_IPv6" {
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
-  dscp = var.dscp
+  dscp_id = var.dscp
   dynamic "agents" {
     for_each = local.agentSantiagoIPv6To_id
     content  {
