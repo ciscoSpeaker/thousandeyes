@@ -17,3 +17,17 @@ resource "thousandeyes_http_server" "http_OutOut" {
     }
   }
 }
+
+resource "thousandeyes_dns_trace" "dnstrace_OutOut" {
+  for_each = tomap({ for inst in local.testsOutOut : inst.test_resource => inst })
+  test_name =  each.value.test_name
+  domain = each.value.test_domain
+  interval       = var.test_dns_interval
+  alerts_enabled = var.alerts
+  dynamic "agents" {
+    for_each = local.cloudAgent_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
+}
