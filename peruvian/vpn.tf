@@ -1,17 +1,37 @@
 locals {
-  vpn = csvdecode(file("${path.module}/vpn.csv"))
+  vpnpublic = csvdecode(file("${path.module}/vpnpublic.csv"))
   }
 
-resource "thousandeyes_agent_to_server" "vpn" {
-  for_each = tomap({ for inst in local.vpn : inst.vpn_resource => inst })
+locals {
+  vpntunnel = csvdecode(file("${path.module}/vpntunnel.csv"))
+  }
+
+resource "thousandeyes_agent_to_server" "vpn_public" {
+  for_each = tomap({ for inst in local.vpnpublic : inst.vpn_resource => inst })
   test_name =  each.value.vpn_name
   server = each.value.vpn_target
   protocol = each.value.protocol
   port = each.value.port
   interval  = var.test_vpn_interval
   alerts_enabled = var.alerts
-  # bgp_measurements = var.bgp
-  # use_public_bgp = var.bgp
+  bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
+  dynamic "agents" {
+    for_each = local.agentRPi_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
+}
+
+resource "thousandeyes_agent_to_server" "vpn_tunnel" {
+  for_each = tomap({ for inst in local.vpntunnel : inst.vpn_resource => inst })
+  test_name =  each.value.vpn_name
+  server = each.value.vpn_target
+  protocol = each.value.protocol
+  port = each.value.port
+  interval  = var.test_vpn_interval
+  alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentRPi_id
     content  {

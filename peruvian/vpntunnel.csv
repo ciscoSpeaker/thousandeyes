@@ -1,3 +1,2 @@
 vpn_resource,vpn_ip,vpn_target,vpn_name,protocol,port
-"oregon","34.83.84.10","oregon.descubre.app","oregon.descubre.app","TCP","1194"
 "oregon_tunnel","10.11.12.1","10.11.12.1","oregon.descubre.app tunnel","TCP","22"
