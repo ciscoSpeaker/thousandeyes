@@ -32,3 +32,7 @@ variable "alerts" {
 variable "bgp" {
   type  = string
 }
+
+variable "dscp" {
+  type  = string
+}
