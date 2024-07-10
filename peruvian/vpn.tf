@@ -11,6 +11,7 @@ resource "thousandeyes_agent_to_server" "vpn" {
   interval  = var.test_vpn_interval
   alerts_enabled = var.alerts
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   dynamic "agents" {
     for_each = local.agentRPi_id
     content  {
