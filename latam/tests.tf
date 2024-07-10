@@ -6,6 +6,7 @@ resource "thousandeyes_agent_to_agent" "Lima" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentLimaTo_id
@@ -23,6 +24,7 @@ resource "thousandeyes_agent_to_agent" "Lima_IPv6" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentLimaIPv6To_id
@@ -40,6 +42,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentMexicoCityTo_id
@@ -57,6 +60,7 @@ resource "thousandeyes_agent_to_agent" "Mexico_City_IPv6" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentMexicoCityIPv6To_id
@@ -74,6 +78,7 @@ resource "thousandeyes_agent_to_agent" "Santiago" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentSantiagoTo_id
@@ -91,6 +96,7 @@ resource "thousandeyes_agent_to_agent" "Santiago_IPv6" {
   direction = var.test_A2A_direction
   protocol = var.test_A2A_protocol
   bgp_measurements = var.bgp
+  use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dynamic "agents" {
     for_each = local.agentSantiagoIPv6To_id
