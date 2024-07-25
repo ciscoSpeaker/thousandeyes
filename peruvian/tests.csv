@@ -3,6 +3,7 @@ test_resource,test_name,test_url,test_domain
 "elcomercio_pe","elcomercio.pe","https://elcomercio.pe","elcomercio.pe ANY"
 "rpp_pe","rpp.pe","https://rpp.pe","rpp.pe ANY"
 "interbank_pe","interbank.pe","https://interbank.pe","interbank.pe ANY"
+"empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY"
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY"
 "www_viabcp_com","www.viabcp.com","https://www.viabcp.com","www.viabcp.com ANY"
 "bcpzonasegura_viabcp_com","bcpzonasegura.viabcp.com","https://bcpzonasegura.viabcp.com","bcpzonasegura.viabcp.com ANY"
