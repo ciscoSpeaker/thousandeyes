@@ -31,3 +31,7 @@ locals {
 output "agents_Peru" {
   value = local.agentsPeru
 }
+
+
+# agentsLima.csv
+# 946241,"Lima, Peru (AWS Local Zone)","PE","Lima, Peru"
