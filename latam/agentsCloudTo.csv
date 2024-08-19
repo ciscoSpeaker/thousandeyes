@@ -1,5 +1,5 @@
 agent_id,agent_name,agent_country,agent_location
-56250,"N. Virginia (AWS us-east-1)",""US","Ashburn Area"
+56250,"N. Virginia (AWS us-east-1)","US","Ashburn Area"
 55965,"Ashburn, VA (GCP us-east4)","US","Ashburn Area"
 59961,"Virginia (Azure eastus)","US","Richmond Area"
 56253,"N. California (AWS us-west-1)","US","San Jose Area"
