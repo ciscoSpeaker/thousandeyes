@@ -113,8 +113,8 @@ resource "thousandeyes_agent_to_agent" "Santiago_IPv6" {
 }
 
 resource "thousandeyes_agent_to_agent" "Cloud" {
-  for_each = tomap({ for inst in local.agentsCloudFrom : inst.agent_name => inst })
-  test_name =  "Cloud to ${each.value.agent_name}"
+  for_each = tomap({ for inst in local.agentsCloudTo : inst.agent_name => inst })
+  test_name =  "Latam to ${each.value.agent_name}"
   target_agent_id = each.value.agent_id
   interval  = var.test_A2A_interval
   direction = var.test_A2A_direction
@@ -124,7 +124,7 @@ resource "thousandeyes_agent_to_agent" "Cloud" {
   alerts_enabled = var.alerts
   dscp_id = var.dscp
   dynamic "agents" {
-    for_each = local.agentCloudTo_id
+    for_each = local.agentCloudFrom_id
     content  {
     agent_id   = agents.value
     }
