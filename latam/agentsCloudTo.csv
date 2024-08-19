@@ -1,0 +1,10 @@
+agent_id,agent_name,agent_country,agent_location
+56250,"N. Virginia (AWS us-east-1)",""US","Ashburn Area"
+55965,"Ashburn, VA (GCP us-east4)","US","Ashburn Area"
+59961,"Virginia (Azure eastus)","US","Richmond Area"
+56253,"N. California (AWS us-west-1)","US","San Jose Area"
+64932,"Los Angeles, CA (GCP us-west2)","US","Los Angeles Area"
+59967,"California (Azure westus)","US","Santa Clara Area"
+56292,"São Paulo, Brazil (AWS sa-east-1)","BR","São Paulo, Brazil"
+55968,"São Paulo, Brazil (GCP southamerica-east1)","BR","São Paulo, Brazil"
+60393,"São Paulo, Brazil (Azure brazilsouth)","BR","São Paulo, Brazil"
