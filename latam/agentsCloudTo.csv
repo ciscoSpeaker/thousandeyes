@@ -8,3 +8,6 @@ agent_id,agent_name,agent_country,agent_location
 56292,"São Paulo, Brazil (AWS sa-east-1)","BR","São Paulo, Brazil"
 55968,"São Paulo, Brazil (GCP southamerica-east1)","BR","São Paulo, Brazil"
 60393,"São Paulo, Brazil (Azure brazilsouth)","BR","São Paulo, Brazil"
+55974,"Frankfurt, Germany (GCP europe-west3)","DE","Hesse, Germany"
+56280,"Frankfurt, Germany (AWS eu-central-1)","DE","Hesse, Germany"
+319291,"Frankfurt, Germany (Azure germanywestcentral)","DE","Hesse, Germany"
