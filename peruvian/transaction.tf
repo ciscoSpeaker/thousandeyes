@@ -8,7 +8,7 @@ resource "thousandeyes_web_transaction" "transaction" {
   interval  = var.test_transaction_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
-  transaction_script = each.value.transaction_js
+  transaction_script = file("${path.module}/${each.value.transaction_js}")
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
   dynamic "agents" {
