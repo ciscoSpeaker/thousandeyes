@@ -34,8 +34,6 @@ output "agents_Peru" {
 locals {
   agentsTransaction = csvdecode(file("${path.module}/agentsTransaction.csv"))
   agentsTransaction_name_id = {for ag_name in local.agentsTransaction : ag_name.agent_name => ag_name.agent_id}
-  agentTransaction_name = keys(local.agentsTransaction) 
-  agentTransaction_id = values(local.agentsTransaction) 
   }
 
 output "agents_Transaction" {

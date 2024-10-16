@@ -12,7 +12,7 @@ resource "thousandeyes_web_transaction" "transaction" {
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
   dynamic "agents" {
-    for_each = local.agentTransaction_id
+    for_each = local.agentsTransaction_name_id
     content  {
     agent_id   = agents.value
     }
