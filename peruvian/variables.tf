@@ -18,6 +18,10 @@ variable "test_http_interval" {
   type  = number
 }
 
+variable "test_transaction_interval" {
+  type  = number
+}
+
 variable "test_dns_interval" {
   type  = number
 }

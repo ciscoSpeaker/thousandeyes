@@ -6,7 +6,6 @@ test_resource,test_name,test_url,test_domain
 "empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY"
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY"
 "www_viabcp_com","www.viabcp.com","https://www.viabcp.com","www.viabcp.com ANY"
-"bcpzonasegura_viabcp_com","bcpzonasegura.viabcp.com","https://bcpzonasegura.viabcp.com","bcpzonasegura.viabcp.com ANY"
 "www_yape_com_pe","www.yape.com.pe","https://www.yape.com.pe","www.yape.com.pe ANY"
 "www_scotiabank_com_pe","www.scotiabank.com.pe","https://www.scotiabank.com.pe","www.scotiabank.com.pe ANY"
 "simple_ripley_com_pe","simple.ripley.com.pe","https://simple.ripley.com.pe","simple.ripley.com.pe ANY"
@@ -36,5 +35,4 @@ test_resource,test_name,test_url,test_domain
 "www_upao_edu_pe","www.upao.edu.pe","https://www.upao.edu.pe","www.upao.edu.pe ANY"
 "www_troomes_com","www.troomes.com","https://www.troomes.com","www.troomes.com ANY"
 "cide_neolms_com","cide.neolms.com","https://cide.neolms.com","cide.neolms.com ANY"
-"bungalowslarochelaiquitos_com","bungalowslarochelaiquitos.com/","https://bungalowslarochelaiquitos.com","bungalowslarochelaiquitos.com ANY"
 "innovacioncide_pucp_edu_pe","innovacioncide.pucp.edu.pe","https://innovacioncide.pucp.edu.pe","innovacioncide.pucp.edu.pe ANY"

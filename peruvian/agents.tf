@@ -2,14 +2,11 @@ locals {
   agentsLima = csvdecode(file("${path.module}/agentsLima.csv"))
   agentsLima_name_id = {for ag_name in local.agentsLima : ag_name.agent_name => ag_name.agent_id}
   }
-  
-# deleted IPv6
-# 1319575,"Lima, Peru - IPv6 (Claro)","PE","Lima, Peru"
-# 266386,"Lima, Peru - IPv6","PE","Lima, Peru"
 
 output "agents_Lima" {
   value = local.agentsLima_name_id
 }
+
 
 locals {
   agentsRPi = jsondecode(file("${path.module}/agentsRPi.json")) 
@@ -22,6 +19,7 @@ output "agents_RPi" {
   value = local.agentsRPi_name_id
 }
 
+
 locals {
   agentsPeru = merge (local.agentsLima_name_id, local.agentsRPi_name_id)
   agentPeru_name = keys(local.agentsPeru)
@@ -33,5 +31,13 @@ output "agents_Peru" {
 }
 
 
-# agentsLima.csv
-# 946241,"Lima, Peru (AWS Local Zone)","PE","Lima, Peru"
+locals {
+  agentsTransaction = csvdecode(file("${path.module}/agentsTransaction.csv"))
+  agentsTransaction_name_id = {for ag_name in local.agentsTransaction : ag_name.agent_name => ag_name.agent_id}
+  agentTransaction_name = keys(local.agentsTransaction) 
+  agentTransaction_id = values(local.agentsTransaction) 
+  }
+
+output "agents_Transaction" {
+  value = local.agentsTransaction_name_id
+}
