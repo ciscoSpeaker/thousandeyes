@@ -36,3 +36,7 @@ variable "bgp" {
 variable "dscp" {
   type  = string
 }
+
+variable "test_enabled" {
+  type  = string
+}
