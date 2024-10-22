@@ -4,47 +4,54 @@ import { driver, test, markers } from 'thousandeyes';
 runScript();
 
 async function runScript() {
-    
+
     await configureDriver();
 
     const settings = test.getSettings();
 
     markers.start('inicio');
     // Load page
-    await driver.get(settings.url); 
+    await driver.get(settings.url);
     // Click on 'Aceptar todo'
-	await click(By.css(`.bcp_grupo_botones > [data-translate="true"]:nth-child(2)`));
+    await click(By.css(`.bcp_grupo_botones > [data-translate="true"]:nth-child(2)`));
     await driver.takeScreenshot();
     markers.stop('inicio');
 
     markers.start('productosTarjetasDeuda');
     // Click on 'Productos'
-	await click(By.css(`.con_opciones > .bcp_titulo_categoria`));
+    await click(By.css(`.con_opciones > .bcp_titulo_categoria`));
     // Click on 'Tarjetas'
-	await click(By.css(`[aria-label="Tarjetas"]`));
+    await click(By.css(`[aria-label="Tarjetas"]`));
     // Click on 'Compra Deuda'
-	await click(By.css(`[data-id-producto="fd0ad79f-6a99-4fc6-ac0a-6cddb531a90c"] li:nth-child(8) > [data-translate="true"]`));
+    await click(By.css(`[data-id-producto="fd0ad79f-6a99-4fc6-ac0a-6cddb531a90c"] li:nth-child(8) > [data-translate="true"]`));
     await driver.takeScreenshot();
     markers.stop('productosTarjetasDeuda');
 
 
     markers.start('beneficiosCuentaSueldo');
     // Click on 'Beneficios'
-	await click(By.css(`.bcp_categoria:nth-child(3) > .bcp_titulo_categoria`));
+    await click(By.css(`.bcp_categoria:nth-child(3) > .bcp_titulo_categoria`));
     // Click on 'Mundo Cuenta Sueldo'
-	await click(By.css(`[aria-label="Mundo Cuenta Sueldo"] > [data-translate="true"]`));
+    await click(By.css(`[aria-label="Mundo Cuenta Sueldo"] > [data-translate="true"]`));
     await driver.takeScreenshot();
     markers.stop('beneficiosCuentaSueldo');
 
     markers.start('bancaInternet');
     // Click on 'Banca por Internet'
-	await click(By.css(`[href="https://bcpzonasegura.viabcp.com/"]:nth-child(2) > span`));
+    await click(By.css(`[href="https://bcpzonasegura.viabcp.com/"]:nth-child(2) > span`));
     // Click on 'Empresa'
-	await click(By.css(`[value="2"] .custom-control-label-radio`));
-    // Click on 'Persona'
-	await click(By.css(`[value="1"] .custom-control-label-radio`));  
+    await click(By.css(`[value="2"] .custom-control-label-radio`));
     await driver.takeScreenshot();
-    markers.stop('bancaInternet');    
+    // Click on 'Persona'
+    await click(By.css(`[value="1"] .custom-control-label-radio`));
+    await driver.takeScreenshot();
+    markers.stop('bancaInternet');
+
+    // Click on 'end'
+    markers.start('end');
+    await click(By.css(`.btn-text-secondary .paragraph-md`));
+    await driver.takeScreenshot();
+    markers.stop('end');
 }
 
 async function configureDriver() {
@@ -60,10 +67,10 @@ async function click(selector) {
     const clickAttemptEndTime = Date.now() + configuredTimeouts.implicit;
 
     await reattemptUntil(attemptToClick, clickAttemptEndTime);
-    
+
     async function attemptToClick() {
         await driver.findElement(selector)
-                    .click();
+            .click();
     }
 }
 
