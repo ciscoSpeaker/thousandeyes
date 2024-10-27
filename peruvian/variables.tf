@@ -29,8 +29,10 @@ variable "test_dns_interval" {
 variable "test_vpn_interval" {
   type  = number
 }
+
 variable "alerts" {
-  type  = string
+  type = bool
+  default = false 
 }
 
 variable "bgp" {
