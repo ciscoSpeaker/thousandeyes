@@ -1,3 +1,7 @@
 test_resource,test_name,test_url,transaction_js
 "www_viabcp_com","www.viabcp.com","https://www.viabcp.com","transaction_viabcp.js"
+"rpp_pe","rpp.pe","https://rpp.pe","transaction_rpp.js"
+"www_cip_org_pe","www.cip.org.pe","https://www.cip.org.pe","transaction_cip.js"
+"www_udep_edu_pe","www.udep.edu.pe","https://www.udep.edu.pe","transaction_udep.js"
 "www_uni_edu_pe","www.uni.edu.pe","https://www.uni.edu.pe","transaction_uni.js"
+"elcomercio_pe","elcomercio.pe","https://elcomercio.pe","transaction_elcomercio.js"
