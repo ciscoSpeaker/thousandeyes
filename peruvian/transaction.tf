@@ -11,6 +11,9 @@ resource "thousandeyes_web_transaction" "transaction" {
   transaction_script = file("${path.module}/${each.value.transaction_js}")
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
+  target_time = var.target_time
+  time_limit = var.time_limit
+  user_agent = var.user_agent
   dynamic "agents" {
     for_each = local.agentsTransaction_name_id
     content  {

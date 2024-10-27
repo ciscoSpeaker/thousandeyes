@@ -36,3 +36,15 @@ variable "alerts" {
 variable "bgp" {
   type  = string
 }
+
+variable "target_time" {
+  type  = number
+}
+
+variable "time_limit" {
+  type  = number
+}
+
+variable "user_agent" {
+  type  = string
+}
