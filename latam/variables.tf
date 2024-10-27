@@ -26,7 +26,8 @@ variable "test_A2A_protocol" {
 }
 
 variable "alerts" {
-  type  = string
+  type = bool
+  default = false 
 }
 
 variable "bgp" {
