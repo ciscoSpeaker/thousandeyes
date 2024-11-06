@@ -8,6 +8,7 @@ resource "thousandeyes_http_server" "http" {
   interval       = var.test_http_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
+  enabled = var.test_enabled
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
   dynamic "agents" {
@@ -21,6 +22,7 @@ resource "thousandeyes_http_server" "http" {
 #resource "thousandeyes_dns_server" "dns" {
 #  for_each = tomap({ for inst in local.tests : inst.test_resource => inst })
 #  test_name      = each.value.test_name
+#  enabled = var.test_enabled
 #  interval       = var.test_dns_interval
 #  alerts_enabled = var.alerts
 #  domain = each.value.test_domain

@@ -7,6 +7,7 @@ resource "thousandeyes_web_transaction" "transaction" {
   test_name =  each.value.test_name
   interval  = var.test_transaction_interval
   alerts_enabled = var.alerts
+  enabled = var.test_enabled
   url = each.value.test_url
   transaction_script = file("${path.module}/${each.value.transaction_js}")
   # bgp_measurements = var.bgp
