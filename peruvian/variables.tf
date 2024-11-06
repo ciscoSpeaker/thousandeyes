@@ -50,3 +50,8 @@ variable "time_limit" {
 variable "user_agent" {
   type  = string
 }
+
+variable "test_enabled" {
+  type = bool
+  default = false
+}
