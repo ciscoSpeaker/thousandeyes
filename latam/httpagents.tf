@@ -5,6 +5,6 @@ locals {
   httpagents_name = values(local.httpagents_id_name) 
   }
 
-output "agents_Lima" {
+output "agents_http" {
   value = local.httpagents_id_name
 }
