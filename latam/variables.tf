@@ -14,6 +14,9 @@ variable "te_timeout" {
   type  = number
 }
 
+variable "test_http_interval" {
+  type  = number
+}
 variable "test_A2A_interval" {
   type  = number
 }
