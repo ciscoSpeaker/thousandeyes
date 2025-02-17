@@ -1,2 +1,3 @@
 vpn_resource,vpn_ip,vpn_target,vpn_name,protocol,port
-"oregon","34.83.84.10","oregon.descubre.app","oregon.descubre.app","TCP","1194"
+"bexley","bexley.descubre.app","bexley.descubre.app","bexley.descubre.app","TCP","1194"
+"toparpa","toparpa.descubre.app","toparpa.descubre.app","toparpa.descubre.app","TCP","1194"
