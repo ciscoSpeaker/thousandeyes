@@ -1,5 +1,5 @@
 variable "te_token" {
-  description = "ThousandEyes OAuth authentication token"
+  description = "ThousandEyes OAuth Authentication token"
   type = string
   sensitive = true
 }
