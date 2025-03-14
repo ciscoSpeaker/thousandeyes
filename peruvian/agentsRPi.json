@@ -1,1 +1,156 @@
-{"agents":[{"agentState":"online","prefix":"38.25.112.0/24","ipAddresses":["192.168.120.12","10.0.10.101","10.0.9.22"],"publicIpAddresses":["200.121.48.125"],"lastSeen":"2025-02-17T14:13:04Z","network":"TELECOM S.A.C. (AS 265691)","targetForTests":"192.168.18.122","utilization":0,"agentId":"1349564","agentName":"pasco","agentType":"enterprise","countryId":"PE","location":"Pasco, Peru","enabled":true,"verifySslCertificates":true,"keepBrowserCache":false,"createdDate":"2024-07-08T03:37:10Z","ipv6Policy":"force-ipv4","hostname":"pasco","interfaceIpMapping":[{"interfaceName":"tun1","ipAddresses":["10.0.10.101"]},{"interfaceName":"wlan0","ipAddresses":["192.168.120.12"]},{"interfaceName":"tun0","ipAddresses":["10.0.9.22"]}]},{"agentState":"online","prefix":"38.25.112.0/24","ipAddresses":["192.168.18.76","10.0.9.18","10.0.10.100"],"publicIpAddresses":["38.25.5.188"],"lastSeen":"2025-02-17T14:13:08Z","network":"TELECOM S.A.C. (AS 265691)","targetForTests":"192.168.18.120","utilization":0,"agentId":"1349565","agentName":"pinar","agentType":"enterprise","countryId":"PE","location":"Piura, Peru","enabled":true,"verifySslCertificates":true,"keepBrowserCache":false,"createdDate":"2024-07-08T03:38:46Z","ipv6Policy":"force-ipv4","hostname":"pinar","interfaceIpMapping":[{"interfaceName":"tun0","ipAddresses":["10.0.9.18"]},{"interfaceName":"wlan0","ipAddresses":["192.168.18.76"]},{"interfaceName":"tun1","ipAddresses":["10.0.10.100"]}]}],"_links":{"self":{"href":"https://api.thousandeyes.com/v7/agents?aid=2079856&agentTypes=enterprise&agentTypes=enterprise-cluster"}}}
+{
+    "agents": [
+        {
+            "agentState": "offline",
+            "prefix": "38.25.112.0/24",
+            "ipAddresses": [
+                "192.168.120.12",
+                "10.0.10.101",
+                "10.0.9.22"
+            ],
+            "publicIpAddresses": [
+                "200.121.48.125"
+            ],
+            "lastSeen": "2025-03-14T00:43:35Z",
+            "network": "TELECOM S.A.C. (AS 265691)",
+            "targetForTests": "192.168.18.122",
+            "errorDetails": [
+                {
+                    "code": "agent-version-outdated",
+                    "description": "Agent Version 1.207.0 (latest: 1.208.0)"
+                }
+            ],
+            "agentId": "1349564",
+            "agentName": "pasco",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Pasco, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2024-07-08T03:37:10Z",
+            "ipv6Policy": "force-ipv4",
+            "hostname": "pasco",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.120.12"
+                    ]
+                },
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
+                        "10.0.10.101"
+                    ]
+                },
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.22"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "offline",
+            "prefix": "38.25.112.0/24",
+            "ipAddresses": [
+                "192.168.18.76",
+                "10.0.9.18",
+                "10.11.12.14",
+                "10.0.10.100"
+            ],
+            "publicIpAddresses": [
+                "38.25.5.188"
+            ],
+            "lastSeen": "2025-03-14T02:57:35Z",
+            "network": "TELECOM S.A.C. (AS 265691)",
+            "targetForTests": "192.168.18.120",
+            "agentId": "1349565",
+            "agentName": "pinar",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Piura, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2024-07-08T03:38:46Z",
+            "ipv6Policy": "force-ipv4",
+            "hostname": "pinar",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.18.76"
+                    ]
+                },
+                {
+                    "interfaceName": "tun2",
+                    "ipAddresses": [
+                        "10.11.12.14"
+                    ]
+                },
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.18"
+                    ]
+                },
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
+                        "10.0.10.100"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "179.7.15.0/24",
+            "ipAddresses": [
+                "192.168.1.31",
+                "2800:200:fc50:4ad:da3a:ddff:fe7f:320b",
+                "10.0.9.42"
+            ],
+            "publicIpAddresses": [
+                "179.7.15.217",
+                "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
+            ],
+            "lastSeen": "2025-03-14T04:56:43Z",
+            "network": "Telmex Peru S.A. (AS 12252)",
+            "targetForTests": "192.168.1.31",
+            "agentId": "1437023",
+            "agentName": "sullana",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Piura, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-03-14T04:50:57Z",
+            "ipv6Policy": "force-ipv4",
+            "hostname": "sullana",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.42"
+                    ]
+                },
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.1.31",
+                        "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
+                    ]
+                }
+            ]
+        }
+    ],
+    "_links": {
+        "self": {
+            "href": "https://api.thousandeyes.com/v7/agents?aid=2079856&agentTypes=enterprise&agentTypes=enterprise-cluster"
+        }
+    }
+}
