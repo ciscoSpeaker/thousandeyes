@@ -11,7 +11,7 @@
             "publicIpAddresses": [
                 "200.121.48.125"
             ],
-            "lastSeen": "2025-03-21T04:24:39Z",
+            "lastSeen": "2025-03-21T04:38:19Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.122",
             "utilization": 0,
@@ -28,9 +28,9 @@
             "hostname": "pasco",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun1",
+                    "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "10.0.9.20"
+                        "192.168.120.12"
                     ]
                 },
                 {
@@ -40,9 +40,9 @@
                     ]
                 },
                 {
-                    "interfaceName": "wlan0",
+                    "interfaceName": "tun1",
                     "ipAddresses": [
-                        "192.168.120.12"
+                        "10.0.9.20"
                     ]
                 }
             ]
@@ -59,7 +59,7 @@
             "publicIpAddresses": [
                 "38.25.5.188"
             ],
-            "lastSeen": "2025-03-21T04:24:04Z",
+            "lastSeen": "2025-03-21T04:39:17Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.120",
             "utilization": 0,
@@ -76,9 +76,9 @@
             "hostname": "pinar",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun2",
+                    "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.0.10.100"
+                        "10.0.9.16"
                     ]
                 },
                 {
@@ -88,15 +88,15 @@
                     ]
                 },
                 {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.16"
-                    ]
-                },
-                {
                     "interfaceName": "tun1",
                     "ipAddresses": [
                         "10.11.12.14"
+                    ]
+                },
+                {
+                    "interfaceName": "tun2",
+                    "ipAddresses": [
+                        "10.0.10.100"
                     ]
                 }
             ]
@@ -114,7 +114,7 @@
                 "179.7.15.217",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
             ],
-            "lastSeen": "2025-03-21T04:24:17Z",
+            "lastSeen": "2025-03-21T04:39:29Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "192.168.1.31",
             "utilization": 0,
@@ -131,9 +131,9 @@
             "hostname": "sullana",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun1",
+                    "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.0.10.102"
+                        "10.0.9.40"
                     ]
                 },
                 {
@@ -144,9 +144,9 @@
                     ]
                 },
                 {
-                    "interfaceName": "tun0",
+                    "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.9.40"
+                        "10.0.10.102"
                     ]
                 }
             ]
@@ -162,7 +162,7 @@
             "publicIpAddresses": [
                 "179.6.155.112"
             ],
-            "lastSeen": "2025-03-21T04:24:03Z",
+            "lastSeen": "2025-03-21T04:38:56Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "10.153.2.16",
             "agentId": "1440743",
@@ -178,6 +178,12 @@
             "hostname": "moquegua",
             "interfaceIpMapping": [
                 {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "10.153.2.16"
+                    ]
+                },
+                {
                     "interfaceName": "tun1",
                     "ipAddresses": [
                         "10.0.10.103"
@@ -187,12 +193,6 @@
                     "interfaceName": "tun0",
                     "ipAddresses": [
                         "10.0.9.44"
-                    ]
-                },
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "10.153.2.16"
                     ]
                 }
             ]
