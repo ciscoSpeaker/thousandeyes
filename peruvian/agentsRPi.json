@@ -1,25 +1,20 @@
 {
     "agents": [
         {
-            "agentState": "offline",
+            "agentState": "online",
             "prefix": "38.25.112.0/24",
             "ipAddresses": [
                 "192.168.120.12",
                 "10.0.10.101",
-                "10.0.9.22"
+                "10.0.9.20"
             ],
             "publicIpAddresses": [
                 "200.121.48.125"
             ],
-            "lastSeen": "2025-03-14T00:43:35Z",
+            "lastSeen": "2025-03-21T04:24:39Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.122",
-            "errorDetails": [
-                {
-                    "code": "agent-version-outdated",
-                    "description": "Agent Version 1.207.0 (latest: 1.208.0)"
-                }
-            ],
+            "utilization": 0,
             "agentId": "1349564",
             "agentName": "pasco",
             "agentType": "enterprise",
@@ -33,40 +28,41 @@
             "hostname": "pasco",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "192.168.120.12"
-                    ]
-                },
-                {
                     "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.10.101"
+                        "10.0.9.20"
                     ]
                 },
                 {
                     "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.0.9.22"
+                        "10.0.10.101"
+                    ]
+                },
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.120.12"
                     ]
                 }
             ]
         },
         {
-            "agentState": "offline",
+            "agentState": "online",
             "prefix": "38.25.112.0/24",
             "ipAddresses": [
                 "192.168.18.76",
-                "10.0.9.18",
                 "10.11.12.14",
-                "10.0.10.100"
+                "10.0.10.100",
+                "10.0.9.16"
             ],
             "publicIpAddresses": [
                 "38.25.5.188"
             ],
-            "lastSeen": "2025-03-14T02:57:35Z",
+            "lastSeen": "2025-03-21T04:24:04Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.120",
+            "utilization": 0,
             "agentId": "1349565",
             "agentName": "pinar",
             "agentType": "enterprise",
@@ -80,27 +76,27 @@
             "hostname": "pinar",
             "interfaceIpMapping": [
                 {
+                    "interfaceName": "tun2",
+                    "ipAddresses": [
+                        "10.0.10.100"
+                    ]
+                },
+                {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
                         "192.168.18.76"
                     ]
                 },
                 {
-                    "interfaceName": "tun2",
-                    "ipAddresses": [
-                        "10.11.12.14"
-                    ]
-                },
-                {
                     "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.0.9.18"
+                        "10.0.9.16"
                     ]
                 },
                 {
                     "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.10.100"
+                        "10.11.12.14"
                     ]
                 }
             ]
@@ -109,17 +105,19 @@
             "agentState": "online",
             "prefix": "179.7.15.0/24",
             "ipAddresses": [
-                "192.168.1.31",
+                "192.168.1.53",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b",
-                "10.0.9.42"
+                "10.0.10.102",
+                "10.0.9.40"
             ],
             "publicIpAddresses": [
                 "179.7.15.217",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
             ],
-            "lastSeen": "2025-03-14T04:56:43Z",
+            "lastSeen": "2025-03-21T04:24:17Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "192.168.1.31",
+            "utilization": 0,
             "agentId": "1437023",
             "agentName": "sullana",
             "agentType": "enterprise",
@@ -133,16 +131,68 @@
             "hostname": "sullana",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun0",
+                    "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.9.42"
+                        "10.0.10.102"
                     ]
                 },
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.1.31",
+                        "192.168.1.53",
                         "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
+                    ]
+                },
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.40"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "179.6.155.0/24",
+            "ipAddresses": [
+                "10.153.2.16",
+                "10.0.10.103",
+                "10.0.9.44"
+            ],
+            "publicIpAddresses": [
+                "179.6.155.112"
+            ],
+            "lastSeen": "2025-03-21T04:24:03Z",
+            "network": "Telmex Peru S.A. (AS 12252)",
+            "targetForTests": "10.153.2.16",
+            "agentId": "1440743",
+            "agentName": "moquegua",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Lima, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-03-21T04:20:18Z",
+            "ipv6Policy": "force-ipv4",
+            "hostname": "moquegua",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
+                        "10.0.10.103"
+                    ]
+                },
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.44"
+                    ]
+                },
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "10.153.2.16"
                     ]
                 }
             ]
