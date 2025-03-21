@@ -11,7 +11,7 @@
             "publicIpAddresses": [
                 "200.121.48.125"
             ],
-            "lastSeen": "2025-03-21T04:38:19Z",
+            "lastSeen": "2025-03-21T06:47:09Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.122",
             "utilization": 0,
@@ -24,7 +24,7 @@
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2024-07-08T03:37:10Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "pasco",
             "interfaceIpMapping": [
                 {
@@ -59,7 +59,7 @@
             "publicIpAddresses": [
                 "38.25.5.188"
             ],
-            "lastSeen": "2025-03-21T04:39:17Z",
+            "lastSeen": "2025-03-21T06:47:25Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.120",
             "utilization": 0,
@@ -72,15 +72,9 @@
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2024-07-08T03:38:46Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "pinar",
             "interfaceIpMapping": [
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.16"
-                    ]
-                },
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
@@ -88,15 +82,21 @@
                     ]
                 },
                 {
-                    "interfaceName": "tun1",
+                    "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.11.12.14"
+                        "10.0.9.16"
                     ]
                 },
                 {
                     "interfaceName": "tun2",
                     "ipAddresses": [
                         "10.0.10.100"
+                    ]
+                },
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
+                        "10.11.12.14"
                     ]
                 }
             ]
@@ -114,7 +114,7 @@
                 "179.7.15.217",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
             ],
-            "lastSeen": "2025-03-21T04:39:29Z",
+            "lastSeen": "2025-03-21T06:47:30Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "192.168.1.31",
             "utilization": 0,
@@ -127,9 +127,15 @@
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-03-14T04:50:57Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "sullana",
             "interfaceIpMapping": [
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
+                        "10.0.10.102"
+                    ]
+                },
                 {
                     "interfaceName": "tun0",
                     "ipAddresses": [
@@ -142,17 +148,11 @@
                         "192.168.1.53",
                         "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
                     ]
-                },
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.102"
-                    ]
                 }
             ]
         },
         {
-            "agentState": "online",
+            "agentState": "offline",
             "prefix": "179.6.155.0/24",
             "ipAddresses": [
                 "10.153.2.16",
@@ -162,27 +162,21 @@
             "publicIpAddresses": [
                 "179.6.155.112"
             ],
-            "lastSeen": "2025-03-21T04:38:56Z",
+            "lastSeen": "2025-03-21T05:19:48Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "10.153.2.16",
             "agentId": "1440743",
             "agentName": "moquegua",
             "agentType": "enterprise",
             "countryId": "PE",
-            "location": "Lima, Peru",
+            "location": "Moquegua, Peru",
             "enabled": true,
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-03-21T04:20:18Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "moquegua",
             "interfaceIpMapping": [
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "10.153.2.16"
-                    ]
-                },
                 {
                     "interfaceName": "tun1",
                     "ipAddresses": [
@@ -190,9 +184,47 @@
                     ]
                 },
                 {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "10.153.2.16"
+                    ]
+                },
+                {
                     "interfaceName": "tun0",
                     "ipAddresses": [
                         "10.0.9.44"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "179.6.155.0/24",
+            "ipAddresses": [
+                "10.153.2.220"
+            ],
+            "publicIpAddresses": [
+                "179.6.155.112"
+            ],
+            "lastSeen": "2025-03-21T06:47:28Z",
+            "network": "Telmex Peru S.A. (AS 12252)",
+            "targetForTests": "10.153.2.220",
+            "agentId": "1440878",
+            "agentName": "arequipa",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Arequipa, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-03-21T06:45:51Z",
+            "ipv6Policy": "prefer-ipv6",
+            "hostname": "arequipa",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "10.153.2.220"
                     ]
                 }
             ]
