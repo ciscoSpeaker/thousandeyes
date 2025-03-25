@@ -16,6 +16,8 @@ test_resource,test_name,test_url,test_domain
 "win_pe","win.pe","https://win.pe","win.pe ANY"
 "www_netacad_com","www.netacad.com","https://www.netacad.com","www.netacad.com ANY"
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY"
+"www_unp_edu_pe","www.unp.edu.pe","https://www.unp.edu.pe","www.unp.edu.pe ANY"
+"epg_unp_edu_pe","epg.unp.edu.pe","https://epg.unp.edu.pe","epg.unp.edu.pe ANY"
 "posgradouni_neolms_com","posgradouni.neolms.com","https://posgradouni.neolms.com","posgradouni.neolms.com ANY"
 "www_ucv_edu_pe","www.ucv.edu.pe","https://www.ucv.edu.pe","www.ucv.edu.pe ANY"
 "www_unitru_edu_pe","www.unitru.edu.pe","https://www.unitru.edu.pe","www.unitru.edu.pe ANY"
