@@ -43,7 +43,6 @@ resource "thousandeyes_voice" "Dallas_RTP_webex" {
   alerts_enabled   = false
   bgp_measurements = true
   use_public_bgp   = true
-  target_agent_id = 4 # Tokyo
-
+  target_agent_id = 364016
   agents = [1423278]
 }
