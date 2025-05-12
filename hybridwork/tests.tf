@@ -45,9 +45,5 @@ resource "thousandeyes_voice" "Dallas_RTP_webex" {
   use_public_bgp   = true
   target_agent_id = 4 # Tokyo
 
-  agents = [
-    {
-      agent_id = 1423278 # Singapore
-    }
-  ]
+  agents = [1423278]
 }
