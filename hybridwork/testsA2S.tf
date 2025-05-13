@@ -14,7 +14,7 @@ resource "thousandeyes_agent_to_server" "RTP_cisco" {
 
 resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   test_name      = "Richardson.cisco"
-  interval       = 3500
+  interval       = 3600
   alerts_enabled = true
   server = "rcdn-vpn-cluster.cisco.com"
   port   = 443
