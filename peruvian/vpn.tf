@@ -17,12 +17,7 @@ resource "thousandeyes_agent_to_server" "vpn_public" {
   alerts_enabled = var.alerts
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
-  dynamic "agents" {
-    for_each = local.agentRPi_id
-    content  {
-    agent_id   = agents.value
-    }
-  }
+  agents = local.agentRPi_id
 }
 
 resource "thousandeyes_agent_to_server" "vpn_tunnel" {
