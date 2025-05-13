@@ -11,12 +11,7 @@ resource "thousandeyes_http_server" "http" {
   enabled = var.test_enabled
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
-  dynamic "agents" {
-    for_each = local.agentPeru_id
-    content  {
-    agent_id   = agents.value
-    }
-  }
+  agents = local.agentRPi_id
 }
 
 #resource "thousandeyes_dns_server" "dns" {
