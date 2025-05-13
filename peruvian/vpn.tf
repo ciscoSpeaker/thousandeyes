@@ -17,7 +17,13 @@ resource "thousandeyes_agent_to_server" "vpn_public" {
   alerts_enabled = var.alerts
   bgp_measurements = var.bgp
   use_public_bgp = var.bgp
-  agents = local.agentRPi_id
+  #agents = local.agentRPi_id
+  dynamic "agents" {
+    for_each = local.agentRPi_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
 }
 
 resource "thousandeyes_agent_to_server" "vpn_tunnel" {
@@ -29,5 +35,11 @@ resource "thousandeyes_agent_to_server" "vpn_tunnel" {
   port = each.value.port
   interval  = var.test_vpn_interval
   alerts_enabled = var.alerts
-  agents = local.agentRPi_id
+  #agents = local.agentRPi_id
+  dynamic "agents" {
+    for_each = local.agentRPi_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
 }
