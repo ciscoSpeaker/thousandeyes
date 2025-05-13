@@ -20,7 +20,7 @@ output "agents_RPi" {
 }
 
 output "agents_RPi_id" {
-  value = local.agentsRPi_id
+  value = local.agentRPi_id
 }
 
 locals {
