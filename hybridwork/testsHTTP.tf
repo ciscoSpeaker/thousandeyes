@@ -43,6 +43,7 @@ resource "thousandeyes_http_server" "sharepoint_cisco" {
   alerts_enabled    = true
   url               = "https://cisco.sharepoint.com/_layouts/15/sharepoint.aspx"
   use_public_bgp    = true
+  content_regex     =  ""
   bgp_measurements  = true
   agents = [
     1423278,
