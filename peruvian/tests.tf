@@ -11,13 +11,13 @@ resource "thousandeyes_http_server" "http" {
   enabled = var.test_enabled
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
-  agents = local.agentRPi_id
-  #dynamic "agents" {
-  #  for_each = local.agentRPi_id
-  #  content  {
-  #  agent_id   = agents.value
-  #  }
-  #}
+  #agents = local.agentRPi_id
+  dynamic "agents" {
+    for_each = local.agentRPi_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
 }
 
 #resource "thousandeyes_dns_server" "dns" {
