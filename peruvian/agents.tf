@@ -19,6 +19,9 @@ output "agents_RPi" {
   value = local.agentsRPi_name_id
 }
 
+output "agents_RPi_id" {
+  value = local.agentsRPi_id
+}
 
 locals {
   agentsPeru = merge (local.agentsLima_name_id, local.agentsRPi_name_id)
