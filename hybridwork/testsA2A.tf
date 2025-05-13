@@ -3,7 +3,7 @@ resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
   alerts_enabled = true
   interval = 3600
   direction = "bidirectional"
-  protocol = "tcp"
+  protocol = "udp"
   port = 5004
   target_agent_id = "775091"
   dscp_id = 34
@@ -20,7 +20,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
   alerts_enabled = true
   interval = 3600
   direction = "bidirectional"
-  protocol = "tcp"
+  protocol = "udp"
   port = 5004
   target_agent_id = "775081"
   dscp_id = 34
@@ -50,7 +50,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
 }
 
 resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
-  test_name      = "Dallas_SIP_webex"
+  test_name      = "Dallas.SIP.webex"
   alerts_enabled = true
   interval = 3600
   direction = "bidirectional"
