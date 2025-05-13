@@ -14,7 +14,7 @@ resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   test_name      = "Richardson.cisco"
   interval       = 120
   alerts_enabled = false
-  server = "rtp-vpn-cluster.cisco.com"
+  server = "rcdn-vpn-cluster.cisco.com"
   port   = 443
   agents = [
     1423278,
@@ -26,7 +26,7 @@ resource "thousandeyes_agent_to_server" "SanJose_cisco" {
   test_name      = "SanJose.cisco"
   interval       = 120
   alerts_enabled = false
-  server = "rtp-vpn-cluster.cisco.com"
+  server = "sjc-vpn-cluster.cisco.com"
   port   = 443
   agents = [
     1423278,
@@ -38,8 +38,8 @@ resource "thousandeyes_agent_to_server" "toparpa_descubre" {
   test_name      = "toparpa.descubre"
   interval       = 120
   alerts_enabled = false
-  server = "rtp-vpn-cluster.cisco.com"
-  port   = 443
+  server = "toparpa.descubre.app"
+  port   = 1194
   agents = [
     1423278,
     69
@@ -50,8 +50,8 @@ resource "thousandeyes_agent_to_server" "cary_descubre" {
   test_name      = "cary.descubre"
   interval       = 120
   alerts_enabled = false
-  server = "rtp-vpn-cluster.cisco.com"
-  port   = 443
+  server = "cary.descubre.app"
+  port   = 1194
   agents = [
     1423278,
     69
