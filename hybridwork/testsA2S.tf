@@ -17,7 +17,6 @@ resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   interval       = 3500
   alerts_enabled = true
   server = "rcdn-vpn-cluster.cisco.com"
-  bgp_measurements = true
   port   = 443
   bgp_measurements = true
   use_public_bgp = true 
