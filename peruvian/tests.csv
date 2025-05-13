@@ -22,7 +22,6 @@ test_resource,test_name,test_url,test_domain
 "www_ucv_edu_pe","www.ucv.edu.pe","https://www.ucv.edu.pe","www.ucv.edu.pe ANY"
 "www_unitru_edu_pe","www.unitru.edu.pe","https://www.unitru.edu.pe","www.unitru.edu.pe ANY"
 "www_utp_edu_pe","www.utp.edu.pe","https://www.utp.edu.pe","www.utp.edu.pe ANY"
-"www_movistar_com_pe","www.movistar.com.pe","https://www.movistar.com.pe","www.movistar.com.pe ANY"
 "www_upao_edu_pe","www.upao.edu.pe","https://www.upao.edu.pe","www.upao.edu.pe ANY"
 "cide_neolms_com","cide.neolms.com","https://cide.neolms.com","cide.neolms.com ANY"
 "innovacioncide_pucp_edu_pe","innovacioncide.pucp.edu.pe","https://innovacioncide.pucp.edu.pe","innovacioncide.pucp.edu.pe ANY"
