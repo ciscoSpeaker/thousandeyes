@@ -7,7 +7,18 @@ resource "thousandeyes_http_server" "workday_cisco" {
   bgp_measurements  = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -20,7 +31,18 @@ resource "thousandeyes_http_server" "salesconnect_cisco" {
   bgp_measurements  = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -33,7 +55,18 @@ resource "thousandeyes_http_server" "jira_cisco" {
   bgp_measurements  = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -48,7 +81,18 @@ resource "thousandeyes_http_server" "sharepoint_cisco" {
   bgp_measurements  = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -62,6 +106,17 @@ resource "thousandeyes_http_server" "webex_cisco" {
   bgp_measurements  = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }

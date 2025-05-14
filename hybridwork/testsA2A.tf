@@ -11,7 +11,18 @@ resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
   use_public_bgp = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -28,7 +39,18 @@ resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
   use_public_bgp = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -45,7 +67,18 @@ resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
   use_public_bgp = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -62,6 +95,17 @@ resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
   use_public_bgp = true
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }

@@ -8,7 +8,18 @@ resource "thousandeyes_agent_to_server" "RTP_cisco" {
   use_public_bgp = true 
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -22,7 +33,18 @@ resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   use_public_bgp = true 
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -36,7 +58,18 @@ resource "thousandeyes_agent_to_server" "SanJose_cisco" {
   use_public_bgp = true 
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -50,7 +83,18 @@ resource "thousandeyes_agent_to_server" "toparpa_descubre" {
   use_public_bgp = true 
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
 
@@ -64,6 +108,17 @@ resource "thousandeyes_agent_to_server" "cary_descubre" {
   use_public_bgp = true 
   agents = [
     1423278,
-    69
+    69,
+    55521,
+    56490,
+    63438, 
+    73,
+    7,
+    98976,
+    347326,
+    65163, 
+    10,
+    32, 
+    108963
   ]
 }
