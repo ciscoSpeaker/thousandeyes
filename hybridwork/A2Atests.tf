@@ -51,5 +51,6 @@ resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
   dscp_id = 34
   bgp_measurements = true
   use_public_bgp = true
+  alert_rules = local.A2Aalerts_id
   agents = local.agents_id
 }
