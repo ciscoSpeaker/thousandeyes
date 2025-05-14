@@ -5,6 +5,6 @@ locals {
   agentId = values(local.agents_name_id) 
   }
 
-output "cloud_agents" {
-  value = local.agents_name_id
-}
+#output "cloud_agents" {
+#  value = local.agents_name_id
+#}
