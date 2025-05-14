@@ -6,6 +6,7 @@ resource "thousandeyes_agent_to_server" "RTP_cisco" {
   port   = 443
   bgp_measurements = true
   use_public_bgp = true 
+  alert_rules = local.A2Salerts_id
   agents = local.agents_id
 }
 
@@ -16,7 +17,8 @@ resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   server = "rcdn-vpn-cluster.cisco.com"
   port   = 443
   bgp_measurements = true
-  use_public_bgp = true 
+  use_public_bgp = true
+  alert_rules = local.A2Salerts_id
   agents = local.agents_id
 }
 
@@ -27,7 +29,8 @@ resource "thousandeyes_agent_to_server" "SanJose_cisco" {
   server = "sjc-vpn-cluster.cisco.com"
   port   = 443
   bgp_measurements = true
-  use_public_bgp = true 
+  use_public_bgp = true
+  alert_rules = local.A2Salerts_id
   agents = local.agents_id
 }
 
@@ -39,6 +42,7 @@ resource "thousandeyes_agent_to_server" "toparpa_descubre" {
   port   = 1194
   bgp_measurements = true
   use_public_bgp = true 
+  alert_rules = local.A2Salerts_id
   agents = local.agents_id
 }
 
@@ -50,5 +54,6 @@ resource "thousandeyes_agent_to_server" "cary_descubre" {
   port   = 1194
   bgp_measurements = true
   use_public_bgp = true 
+  alert_rules = local.A2Salerts_id
   agents = local.agents_id
 }
