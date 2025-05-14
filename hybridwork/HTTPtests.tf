@@ -52,7 +52,7 @@ resource "thousandeyes_http_server" "wwwin_cisco" {
   url               = "https://wwwin.cisco.com/c/cec/bridge.html/home"
   use_public_bgp    = true
   content_regex     =  ""
-  desired_status_code = "403"
+  desired_status_code = "200"
   bgp_measurements  = true
   alert_rules = local.HTTPalerts_id
   agents = local.agents_id
