@@ -45,6 +45,18 @@ resource "thousandeyes_http_server" "sharepoint_cisco" {
   agents = local.agents_id
 }
 
+resource "thousandeyes_http_server" "wwwin_cisco" {
+  test_name         = "wwwin.cisco"
+  interval          = 3600
+  alerts_enabled    = true
+  url               = "https://wwwin.cisco.com/c/cec/bridge.html/home"
+  use_public_bgp    = true
+  content_regex     =  ""
+  desired_status_code = "403"
+  bgp_measurements  = true
+  alert_rules = local.HTTPalerts_id
+  agents = local.agents_id
+}
 
 resource "thousandeyes_http_server" "webex_cisco" {
   test_name         = "webex.cisco"
