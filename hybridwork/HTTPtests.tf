@@ -5,6 +5,7 @@ resource "thousandeyes_http_server" "workday_cisco" {
   url               = "https://wd5.myworkday.com/cisco/"
   use_public_bgp    = true
   bgp_measurements  = true
+  alert_rules = local.HTTPalerts_id
   agents = local.agents_id
 }
 
@@ -15,6 +16,7 @@ resource "thousandeyes_http_server" "salesconnect_cisco" {
   url               = "https://salesconnect.cisco.com/sc/s/"
   use_public_bgp    = true
   bgp_measurements  = true 
+  alert_rules = local.HTTPalerts_id
   agents = local.agents_id
 
 }
@@ -26,6 +28,7 @@ resource "thousandeyes_http_server" "jira_cisco" {
   url               = "https://cisco-cx.atlassian.net/"
   use_public_bgp    = true
   bgp_measurements  = true
+  alert_rules = local.HTTPalerts_id
   agents = local.agents_id
 }
 
@@ -38,6 +41,7 @@ resource "thousandeyes_http_server" "sharepoint_cisco" {
   content_regex     =  ""
   desired_status_code = "403"
   bgp_measurements  = true
+  alert_rules = local.HTTPalerts_id
   agents = local.agents_id
 }
 
@@ -49,5 +53,6 @@ resource "thousandeyes_http_server" "webex_cisco" {
   url               = "https://cisco.webex.com"
   use_public_bgp    = true
   bgp_measurements  = true
+  alert_rules = local.HTTPalerts_id
   agents = local.agents_id
 }
