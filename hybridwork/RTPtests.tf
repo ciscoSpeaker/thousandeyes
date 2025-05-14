@@ -11,6 +11,7 @@ resource "thousandeyes_voice" "Chicago_RTP_webex" {
   randomized_start_time = false
   enabled           = true
   target_agent_id   = 775081
+  alert_rules = local.RTPalerts_id
   agents = local.agents_id
 }
 
@@ -27,5 +28,6 @@ resource "thousandeyes_voice" "Dallas_RTP_webex" {
   randomized_start_time = false
   enabled           = true
   target_agent_id   = 775091
+  alert_rules = local.RTPalerts_id
   agents = local.agents_id
 }
