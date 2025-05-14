@@ -9,21 +9,7 @@ resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
   dscp_id = 34
   bgp_measurements = true
   use_public_bgp = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
@@ -37,21 +23,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
   dscp_id = 34
   bgp_measurements = true
   use_public_bgp = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
@@ -65,21 +37,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
   dscp_id = 34
   bgp_measurements = true
   use_public_bgp = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
@@ -93,19 +51,5 @@ resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
   dscp_id = 34
   bgp_measurements = true
   use_public_bgp = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }

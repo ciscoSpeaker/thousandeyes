@@ -5,21 +5,7 @@ resource "thousandeyes_http_server" "workday_cisco" {
   url               = "https://wd5.myworkday.com/cisco/"
   use_public_bgp    = true
   bgp_measurements  = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_http_server" "salesconnect_cisco" {
@@ -28,22 +14,9 @@ resource "thousandeyes_http_server" "salesconnect_cisco" {
   alerts_enabled    = true
   url               = "https://salesconnect.cisco.com/sc/s/"
   use_public_bgp    = true
-  bgp_measurements  = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  bgp_measurements  = true 
+  agents = local.agents_id
+
 }
 
 resource "thousandeyes_http_server" "jira_cisco" {
@@ -53,21 +26,7 @@ resource "thousandeyes_http_server" "jira_cisco" {
   url               = "https://cisco-cx.atlassian.net/"
   use_public_bgp    = true
   bgp_measurements  = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_http_server" "sharepoint_cisco" {
@@ -79,21 +38,7 @@ resource "thousandeyes_http_server" "sharepoint_cisco" {
   content_regex     =  ""
   desired_status_code = "403"
   bgp_measurements  = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 
@@ -104,19 +49,5 @@ resource "thousandeyes_http_server" "webex_cisco" {
   url               = "https://cisco.webex.com"
   use_public_bgp    = true
   bgp_measurements  = true
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }

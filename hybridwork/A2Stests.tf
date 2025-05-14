@@ -6,21 +6,7 @@ resource "thousandeyes_agent_to_server" "RTP_cisco" {
   port   = 443
   bgp_measurements = true
   use_public_bgp = true 
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_server" "Richardson_cisco" {
@@ -31,21 +17,7 @@ resource "thousandeyes_agent_to_server" "Richardson_cisco" {
   port   = 443
   bgp_measurements = true
   use_public_bgp = true 
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_server" "SanJose_cisco" {
@@ -56,21 +28,7 @@ resource "thousandeyes_agent_to_server" "SanJose_cisco" {
   port   = 443
   bgp_measurements = true
   use_public_bgp = true 
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_server" "toparpa_descubre" {
@@ -81,21 +39,7 @@ resource "thousandeyes_agent_to_server" "toparpa_descubre" {
   port   = 1194
   bgp_measurements = true
   use_public_bgp = true 
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_server" "cary_descubre" {
@@ -106,19 +50,5 @@ resource "thousandeyes_agent_to_server" "cary_descubre" {
   port   = 1194
   bgp_measurements = true
   use_public_bgp = true 
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }

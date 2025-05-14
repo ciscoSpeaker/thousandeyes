@@ -11,21 +11,7 @@ resource "thousandeyes_voice" "Chicago_RTP_webex" {
   randomized_start_time = false
   enabled           = true
   target_agent_id   = 775081
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
 
 resource "thousandeyes_voice" "Dallas_RTP_webex" {
@@ -41,19 +27,5 @@ resource "thousandeyes_voice" "Dallas_RTP_webex" {
   randomized_start_time = false
   enabled           = true
   target_agent_id   = 775091
-  agents = [
-    1423278,
-    69,
-    55521,
-    56490,
-    63438, 
-    73,
-    7,
-    98976,
-    347326,
-    65163, 
-    10,
-    32, 
-    108963
-  ]
+  agents = local.agents_id
 }
