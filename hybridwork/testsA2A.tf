@@ -2,7 +2,7 @@ resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
   test_name      = "Dallas.video.webex"
   alerts_enabled = true
   interval = 3600
-  direction = "bidirectional"
+  direction = "to-target"
   protocol = "udp"
   port = 5004
   target_agent_id = "775091"
@@ -19,7 +19,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
   test_name      = "Chicago.video.webex"
   alerts_enabled = true
   interval = 3600
-  direction = "bidirectional"
+  direction = "to-target"
   protocol = "udp"
   port = 5004
   target_agent_id = "775081"
@@ -36,7 +36,7 @@ resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
   test_name      = "Chicago.SIP.webex"
   alerts_enabled = true
   interval = 3600
-  direction = "bidirectional"
+  direction = "to-target"
   protocol = "tcp"
   port = 5062
   target_agent_id = "775081"
@@ -53,7 +53,7 @@ resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
   test_name      = "Dallas.SIP.webex"
   alerts_enabled = true
   interval = 3600
-  direction = "bidirectional"
+  direction = "to-target"
   protocol = "tcp"
   port = 5062
   target_agent_id = "775091"
