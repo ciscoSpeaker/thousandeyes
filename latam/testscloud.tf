@@ -1,4 +1,4 @@
-resource "thousandeyes_agent_to_agent" "cloud" {
+resource "thousandeyes_agent_to_agent" "Cloud" {
   for_each          = tomap({ for inst in local.agentsCloudTo : inst.agent_name => inst })
   test_name         =  "latam to ${each.value.agent_name}"
   target_agent_id   = each.value.agent_id
