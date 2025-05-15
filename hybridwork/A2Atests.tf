@@ -11,7 +11,7 @@ locals {
   A2Atests = csvdecode(file("${path.module}/A2Atests.csv"))
 }
 
-resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
+resource "thousandeyes_agent_to_agent" "a2a" {
   for_each          = tomap({ for inst in local.A2Atests : inst.test_resource => inst })
   test_name         = each.value.test_name  
   target_agent_id   = tonumber(each.value.target_agent_id)
