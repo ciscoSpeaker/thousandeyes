@@ -12,7 +12,6 @@ test_resource,test_name,test_url,test_domain
 "www_sunarp_gob_pe","www.sunarp.gob.pe","https://www.sunarp.gob.pe","www.sunarp.gob.pe ANY"
 "www_falabella_com_pe","www.falabella.com.pe","https://www.falabella.com.pe","www.falabella.com.pe ANY"
 "win_pe","win.pe","https://win.pe","win.pe ANY"
-"www_netacad_com","www.netacad.com","https://www.netacad.com","www.netacad.com ANY"
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY"
 "www_unp_edu_pe","www.unp.edu.pe","https://www.unp.edu.pe","www.unp.edu.pe ANY"
 "epg_unp_edu_pe","epg.unp.edu.pe","https://epg.unp.edu.pe","epg.unp.edu.pe ANY"
