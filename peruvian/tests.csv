@@ -22,7 +22,6 @@ test_resource,test_name,test_url,test_domain
 "www_utp_edu_pe","www.utp.edu.pe","https://www.utp.edu.pe","www.utp.edu.pe ANY"
 "www_upao_edu_pe","www.upao.edu.pe","https://www.upao.edu.pe","www.upao.edu.pe ANY"
 "cide_neolms_com","cide.neolms.com","https://cide.neolms.com","cide.neolms.com ANY"
-"innovacioncide_pucp_edu_pe","innovacioncide.pucp.edu.pe","https://innovacioncide.pucp.edu.pe","innovacioncide.pucp.edu.pe ANY"
 "eltiempo_pe","eltiempo.pe","https://eltiempo.pe","eltiempo.pe ANY"
 "peru21_pe","peru21.pe","https://peru21.pe","peru21.pe ANY"
 "www_latina_pe","www.latina.pe","https://www.latina.pe","www.latina.pe ANY"
