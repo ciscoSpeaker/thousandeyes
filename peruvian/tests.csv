@@ -1,5 +1,4 @@
 test_resource,test_name,test_url,test_domain
-"www_lacnic_net","www.lacnic.net","https://www.lacnic.net","www.lacnic.net ANY"
 "interbank_pe","interbank.pe","https://interbank.pe","interbank.pe ANY"
 "empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY"
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY"
