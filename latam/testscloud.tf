@@ -16,4 +16,10 @@ resource "thousandeyes_agent_to_agent" "Cloud" {
     agent_id   = agents.value
     }
   }
+  dynamic "alert_rules" {
+    for_each = local.A2Aalerts_id
+    content {
+      rule_id = alert_rules.value
+    }
+  }
 }
