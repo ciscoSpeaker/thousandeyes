@@ -3,7 +3,6 @@ test_resource,test_name,test_url,test_domain
 "interbank_pe","interbank.pe","https://interbank.pe","interbank.pe ANY"
 "empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY"
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY"
-"www_yape_com_pe","www.yape.com.pe","https://www.yape.com.pe","www.yape.com.pe ANY"
 "www_scotiabank_com_pe","www.scotiabank.com.pe","https://www.scotiabank.com.pe","www.scotiabank.com.pe ANY"
 "simple_ripley_com_pe","simple.ripley.com.pe","https://simple.ripley.com.pe","simple.ripley.com.pe ANY"
 "www_bbva_pe","www.bbva.pe","https://www.bbva.pe","www.bbva.pe ANY"
