@@ -26,6 +26,22 @@ resource "thousandeyes_http_server" "http" {
   }
 }
 
+resource "thousandeyes_dns_trace" "dns" {
+  for_each       = { for test in local.tests : test.test_resource => test }
+  test_name      = each.value.test_name
+  interval       = var.test_dns_interval
+  alerts_enabled = var.alerts
+  domain         = each.value.test_domain
+  enabled        = var.test_enabled
+  dynamic "agents" {
+    for_each = local.agentRPi_id
+    content  {
+    agent_id   = agents.value
+    }
+  }
+}
+
+
 #resource "thousandeyes_dns_server" "dns" {
 #  for_each = tomap({ for inst in local.tests : inst.test_resource => inst })
 #  test_name      = each.value.test_name
