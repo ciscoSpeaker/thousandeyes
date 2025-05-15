@@ -1,6 +1,6 @@
-locals {
-  httptests = csvdecode(file("${path.module}/httptests.csv"))
-  }
+#locals {
+#  httptests = csvdecode(file("${path.module}/httptests.csv"))
+#  }
 
 #resource "thousandeyes_http_server" "http" {
 #  for_each = tomap({ for inst in local.httptests : inst.test_resource => inst })

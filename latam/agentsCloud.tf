@@ -12,6 +12,6 @@ locals {
   agentCloudTo_name = values(local.agentsCloudTo_id_name) 
   }
 
-output "agents_Cloud" {
-  value = local.agentsCloudTo_id_name
-}
+#output "agents_Cloud" {
+#  value = local.agentsCloudTo_id_name
+#}

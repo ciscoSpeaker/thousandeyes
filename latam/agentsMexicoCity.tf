@@ -26,10 +26,10 @@ locals {
   agentMexicoCityIPv6To_name = values(local.agentsMexicoCityIPv6To_id_name) 
   }
 
-output "agents_MexicoCity" {
-  value = local.agentsMexicoCityTo_id_name
-}
+#output "agents_MexicoCity" {
+#  value = local.agentsMexicoCityTo_id_name
+#}
 
-output "agents_MexicoCity_IPv6" {
-  value = local.agentsMexicoCityIPv6To_id_name
-}
+#output "agents_MexicoCity_IPv6" {
+#  value = local.agentsMexicoCityIPv6To_id_name
+#}

@@ -26,10 +26,10 @@ locals {
   agentSantiagoIPv6To_name = values(local.agentsSantiagoIPv6To_id_name) 
   }
 
-output "agents_Santiago" {
-  value = local.agentsSantiagoTo_id_name
-}
+#output "agents_Santiago" {
+#  value = local.agentsSantiagoTo_id_name
+#}
 
-output "agents_Santiago_IPv6" {
-  value = local.agentsSantiagoIPv6To_id_name
-}
+#output "agents_Santiago_IPv6" {
+#  value = local.agentsSantiagoIPv6To_id_name
+#}

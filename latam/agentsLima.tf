@@ -26,10 +26,10 @@ locals {
   agentLimaIPv6To_name = values(local.agentsLimaIPv6To_id_name) 
   }
 
-output "agents_Lima" {
-  value = local.agentsLimaTo_id_name
-}
+#output "agents_Lima" {
+##  value = local.agentsLimaTo_id_name
+#}
 
-output "agents_Lima_IPv6" {
-  value = local.agentsLimaIPv6To_id_name
-}
+#output "agents_Lima_IPv6" {
+#  value = local.agentsLimaIPv6To_id_name
+#}
