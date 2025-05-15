@@ -1,0 +1,5 @@
+test_resource,test_name,target_agent_id,protocol,port
+"Dallas_video_webex","Dallas.video.webex",775091,"udp",5004
+"Chicago_video_webex","Chicago.video.webex",775081,"udp",5004
+"Dallas_SIP_webex","Dallas.SIP.webex",775091,"tcp",5062
+"Chicago_SIP_webex","Chicago.SIP.webex",775081,"tcp",5062
