@@ -5,5 +5,4 @@ test_resource,test_name,test_url,content_regex,desired_status_code
 "sharepoint_cisco","sharepoint.cisco","https://cisco.sharepoint.com/_layouts/15/sharepoint.aspx","","403"
 "wwwin_cisco","wwwin.cisco","https://wwwin.cisco.com/c/cec/bridge.html/home","",200
 "webex_cisco","webex.cisco","https://cisco.webex.com","",200
-"payroll_cisco","payroll.cisco","https://payroll.cisco.com","",200
 "concur_cisco","concur.cisco","https://concur.cisco.com","",200
