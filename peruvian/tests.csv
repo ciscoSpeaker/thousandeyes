@@ -27,3 +27,4 @@ test_resource,test_name,test_url,test_domain
 "www_latina_pe","www.latina.pe","https://www.latina.pe","www.latina.pe ANY"
 "panamericana_pe","panamericana.pe","https://panamericana.pe","panamericana.pe ANY"
 "www_upc_edu_pe","www.upc.edu.pe","https://www.upc.edu.pe","www.upc.edu.pe ANY"
+"www_unmsm_edu_pe","www.unmsm.edu.pe","https://www.unmsm.edu.pe","www.unmsm.edu.pe ANY"

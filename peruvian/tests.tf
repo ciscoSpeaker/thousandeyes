@@ -39,6 +39,12 @@ resource "thousandeyes_dns_trace" "dns" {
     agent_id   = agents.value
     }
   }
+  dynamic "alert_rules" {
+    for_each = local.DNSalerts_id
+    content {
+      rule_id = alert_rules.value
+    }
+  }
 }
 
 
