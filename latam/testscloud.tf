@@ -3,9 +3,9 @@ resource "thousandeyes_agent_to_agent" "cloud" {
   test_name         =  "latam to ${each.value.agent_name}"
   target_agent_id   = each.value.agent_id
   enabled           = var.test_enabled
-  interval          = var.test_A2A_interval
-  direction         = var.test_A2A_direction
-  protocol          = var.test_A2A_protocol
+  interval          = var.A2A_interval
+  direction         = var.A2A_direction 
+  protocol          = var.A2A_protocol 
   bgp_measurements  = var.bgp
   use_public_bgp    = var.bgp
   alerts_enabled    = var.alerts
