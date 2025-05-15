@@ -1,0 +1,6 @@
+test_resource,test_name,server,port
+"RTP_cisco","RTP.cisco","rtp-vpn-cluster.cisco.com",443
+"Richardson_cisco","Richardson.cisco","rcdn-vpn-cluster.cisco.com",443
+"SanJose_cisco","SanJose.cisco","sjc-vpn-cluster.cisco.com",443
+"toparpa_descubre","toparpa.descubre","toparpa.descubre.app",1194
+"cary_descubre","cary.descubre","cary.descubre.app",1194
