@@ -3,9 +3,9 @@ locals {
   agentsLima_name_id = {for ag_name in local.agentsLima : ag_name.agent_name => ag_name.agent_id}
   }
 
-output "agents_Lima" {
-  value = local.agentsLima_name_id
-}
+#output "agents_Lima" {
+#  value = local.agentsLima_name_id
+#}
 
 
 locals {
@@ -15,13 +15,13 @@ locals {
   agentRPi_id = values(local.agentsRPi_name_id) 
   }
 
-output "agents_RPi" {
-  value = local.agentsRPi_name_id
-}
+#output "agents_RPi" {
+#  value = local.agentsRPi_name_id
+#}
 
-output "agents_RPi_id" {
-  value = local.agentRPi_id
-}
+#output "agents_RPi_id" {
+#  value = local.agentRPi_id
+#}
 
 locals {
   agentsPeru = merge (local.agentsLima_name_id, local.agentsRPi_name_id)
@@ -29,9 +29,9 @@ locals {
   agentPeru_id = values(local.agentsPeru) 
 }
 
-output "agents_Peru" {
-  value = local.agentsPeru
-}
+#output "agents_Peru" {
+#  value = local.agentsPeru
+#}
 
 
 locals {
@@ -39,6 +39,6 @@ locals {
   agentsTransaction_name_id = {for ag_name in local.agentsTransaction : ag_name.agent_name => ag_name.agent_id}
   }
 
-output "agents_Transaction" {
-  value = local.agentsTransaction_name_id
-}
+#output "agents_Transaction" {
+#  value = local.agentsTransaction_name_id
+#}

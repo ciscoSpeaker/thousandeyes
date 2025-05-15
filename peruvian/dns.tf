@@ -5,6 +5,6 @@ locals {
   server_dns_ip = values(local.server_dns_name_ip)
 }
 
-output "server_dns" {
-  value = local.server_dns_name_ip
-}
+#output "server_dns" {
+#  value = local.server_dns_name_ip
+#}
