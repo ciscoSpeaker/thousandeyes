@@ -8,6 +8,7 @@ resource "thousandeyes_http_server" "http" {
   interval       = var.test_http_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
+  alert_rules = local.HTTPalerts_id
   enabled = var.test_enabled
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
