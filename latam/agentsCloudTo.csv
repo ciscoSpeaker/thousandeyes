@@ -15,5 +15,4 @@ agent_id,agent_name,agent_country,agent_location
 315196,"Hong Kong (GCP asia-east2)","HK","Hong Kong"
 319326,"Hong Kong (AWS ap-east-1)","HK","Hong Kong"
 56562,"Council Bluffs (GCP us-central1)","US","Council Bluffs"
-56256,"Oregon (AWS us-west-2)","US","Oregon"
 59970,"Iowa (Azure centralus)","US","Iowa"
