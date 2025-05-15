@@ -86,6 +86,30 @@ variable "voice_test_dscp_id" {
   default     = 46
 }
 
+variable "voice_duration" {
+  description = "duration for the Voice test"
+  type        = number
+  default     = 5
+}
+
+variable "voice_jitter_buffer" {
+  description = "jitter_buffer for the Voice test"
+  type        = number
+  default     = 40
+
+}
+variable "voice_num_path_traces" {
+  description = "num_path_traces for the Voice test"
+  type        = number
+  default     = 3
+}
+
+variable "voice_randomized_start_time" {
+  description = "randomized_start_time the Voice test"
+  type        = bool
+  default     = false
+}
+
 # Agent-to-Server Variables
 
 variable "a2s_test_enabled" {

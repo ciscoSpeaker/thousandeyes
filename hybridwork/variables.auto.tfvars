@@ -14,6 +14,10 @@ voice_test_alerts_enabled = true
 voice_test_bgp            = true
 voice_test_use_public_bgp = true
 voice_test_dscp_id        = 46
+voice_duration            = 5
+voice_jitter_buffer       = 40
+voice_num_path_traces     = 3
+voice_randomized_start_time = false
 
 # Agent-to-Server Test
 a2s_test_enabled        = true
