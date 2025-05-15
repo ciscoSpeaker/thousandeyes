@@ -1,59 +1,63 @@
 resource "thousandeyes_agent_to_agent" "Dallas_video_webex" {
   test_name      = "Dallas.video.webex"
-  alerts_enabled = true
-  interval = 3600
-  direction = "to-target"
+  target_agent_id = "775091"
   protocol = "udp"
   port = 5004
-  target_agent_id = "775091"
-  dscp_id = 34
-  bgp_measurements = true
-  use_public_bgp = true
+  interval = var.a2a_test_interval
+  direction = var.a2a_test_direction
+  dscp_id = var.a2a_test_dscp_id
+  bgp_measurements = var.a2a_test_bgp            
+  use_public_bgp = var.a2a_test_use_public_bgp 
+  enabled = var.a2a_test_enabled       
+  alerts_enabled = var.a2a_test_alerts_enabled
   alert_rules = local.A2Aalerts_id
   agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Chicago_video_webex" {
   test_name      = "Chicago.video.webex"
-  alerts_enabled = true
-  interval = 3600
-  direction = "to-target"
+  target_agent_id = "775081"
   protocol = "udp"
   port = 5004
-  target_agent_id = "775081"
-  dscp_id = 34
-  bgp_measurements = true
-  use_public_bgp = true
+  interval = var.a2a_test_interval
+  direction = var.a2a_test_direction
+  dscp_id = var.a2a_test_dscp_id
+  bgp_measurements = var.a2a_test_bgp            
+  use_public_bgp = var.a2a_test_use_public_bgp 
+  enabled = var.a2a_test_enabled       
+  alerts_enabled = var.a2a_test_alerts_enabled
   alert_rules = local.A2Aalerts_id
   agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Chicago_SIP_webex" {
   test_name      = "Chicago.SIP.webex"
-  alerts_enabled = true
-  interval = 3600
-  direction = "to-target"
+  target_agent_id = "775081"
   protocol = "tcp"
   port = 5062
-  target_agent_id = "775081"
-  dscp_id = 34
-  bgp_measurements = true
-  use_public_bgp = true
+  interval = var.a2a_test_interval
+  direction = var.a2a_test_direction
+  dscp_id = var.a2a_test_dscp_id
+  bgp_measurements = var.a2a_test_bgp            
+  use_public_bgp = var.a2a_test_use_public_bgp 
+  enabled = var.a2a_test_enabled       
+  alerts_enabled = var.a2a_test_alerts_enabled
   alert_rules = local.A2Aalerts_id
   agents = local.agents_id
 }
 
 resource "thousandeyes_agent_to_agent" "Dallas_SIP_webex" {
   test_name      = "Dallas.SIP.webex"
-  alerts_enabled = true
-  interval = 3600
-  direction = "to-target"
+  target_agent_id = "775091"
   protocol = "tcp"
   port = 5062
-  target_agent_id = "775091"
-  dscp_id = 34
-  bgp_measurements = true
-  use_public_bgp = true
+  interval = var.a2a_test_interval
+  direction = var.a2a_test_direction
+  dscp_id = var.a2a_test_dscp_id
+  bgp_measurements = var.a2a_test_bgp            
+  use_public_bgp = var.a2a_test_use_public_bgp 
+  enabled = var.a2a_test_enabled       
+  alerts_enabled = var.a2a_test_alerts_enabled
   alert_rules = local.A2Aalerts_id
   agents = local.agents_id
 }
