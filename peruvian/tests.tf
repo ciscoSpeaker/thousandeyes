@@ -8,7 +8,6 @@ resource "thousandeyes_http_server" "http" {
   interval       = var.test_http_interval
   alerts_enabled = var.alerts
   url = each.value.test_url
-  alert_rules = local.HTTPalerts_id
   enabled = var.test_enabled
   # bgp_measurements = var.bgp
   # use_public_bgp = var.bgp
@@ -17,6 +16,12 @@ resource "thousandeyes_http_server" "http" {
     for_each = local.agentRPi_id
     content  {
     agent_id   = agents.value
+    }
+  }
+  dynamic "alert_rules" {
+    for_each = local.HTTPalerts_id
+    content {
+      rule_id = alert_rules.value
     }
   }
 }
