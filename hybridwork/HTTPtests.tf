@@ -1,8 +1,9 @@
 locals {
-  apps = csvdecode(file("${path.module}/HTTPtests.csv"))
+  HTTPtests = csvdecode(file("${path.module}/HTTPtests.csv"))
 }
 
 resource "thousandeyes_http_server" "http" {
+  for_each = tomap({ for inst in local.HTTPtests : inst.test_resource => inst })
   test_name            = each.value.test_name
   url                  = each.value.test_url
   content_regex        = each.value.content_regex
