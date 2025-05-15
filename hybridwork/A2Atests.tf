@@ -3,10 +3,6 @@ locals {
   A2Aalerts_id  = [for row in local.A2Aalerts : tonumber(row.a2a_alert_id)]
 }
 
-#output "A2Aalerts" {
-#  value = local.A2Aalerts_id
-#}
-
 locals {
   A2Atests = csvdecode(file("${path.module}/A2Atests.csv"))
 }
