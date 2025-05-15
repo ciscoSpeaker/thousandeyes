@@ -10,16 +10,18 @@ resource "thousandeyes_agent_to_agent" "Cloud" {
   use_public_bgp = var.bgp
   alerts_enabled = var.alerts
   dscp_id = var.dscp
-  dynamic "agents" {
-    for_each = local.agentCloudFrom_id
-    content  {
-    agent_id   = agents.value
-    }
-  }
-  dynamic "alert_rules" {
-    for_each = local.A2Aalerts_id
-    content {
-      rule_id = alert_rules.value
-    }
-  }
+  alert_rules = local.A2Aalerts_id
+  agents = local.agentCloudFrom_id
+  #dynamic "agents" {
+  #  for_each = local.agentCloudFrom_id
+  #  content  {
+  #  agent_id   = agents.value
+  #  }
+  #}
+  #dynamic "alert_rules" {
+  #  for_each = local.A2Aalerts_id
+  #  content {
+  #    rule_id = alert_rules.value
+  #  }
+  #}
 }
