@@ -28,3 +28,4 @@ test_resource,test_name,test_url,test_domain
 "peru21_pe","peru21.pe","https://peru21.pe","peru21.pe ANY"
 "www_latina_pe","www.latina.pe","https://www.latina.pe","www.latina.pe ANY"
 "panamericana_pe","panamericana.pe","https://panamericana.pe","panamericana.pe ANY"
+"www_upc_edu_pe","www.upc.edu.pe","https://www.upc.edu.pe","www.upc.edu.pe ANY"
