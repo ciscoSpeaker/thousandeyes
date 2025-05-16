@@ -20,12 +20,12 @@ resource "thousandeyes_http_server" "http" {
       rule_id = alert_rules.value
     }
   }
-#  dynamic "bgp_monitors" {
-#    for_each = local.bgpmonitor_id
-#    content {
-#      monitor_id = bgp_monitors.value
-#    }
-#  }
+  dynamic "bgp_monitors" {
+    for_each = local.bgpmonitor_id
+    content {
+      monitor_id = bgp_monitors.value
+    }
+  }
 }
 
 resource "thousandeyes_dns_trace" "dns" {
