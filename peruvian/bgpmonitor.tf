@@ -5,10 +5,10 @@ locals {
   bgpmonitor_name = values(local.bgpmonitor_id_name)
 }
 
-output "bgpmonitor_id" {
-  value = local.bgpmonitor_id
-}
+#output "bgpmonitor_id" {
+#  value = local.bgpmonitor_id
+#}
 
-output "bgpmonitor_name" {
-  value = local.bgpmonitor_name
-}
+#output "bgpmonitor_name" {
+#  value = local.bgpmonitor_name
+#}
