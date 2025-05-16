@@ -39,7 +39,7 @@ variable "bgp" {
   type  = string
 }
 
-variable "bgp_monitor" {
+variable "monitor_id" {
   type  = number
 }
 

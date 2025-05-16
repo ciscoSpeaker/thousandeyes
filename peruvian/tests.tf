@@ -21,7 +21,7 @@ resource "thousandeyes_http_server" "http" {
     }
   }
   bgp_monitors {
-    monitor_id = var.bgp_monitor
+    monitor_id = var.monitor_id
   }
 }
 

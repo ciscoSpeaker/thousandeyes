@@ -1,8 +1,8 @@
 te_timeout = 1000
 
 alerts  = true
-bgp = false
-bgp_monitor = 29393
+bgp = true
+monitor_id = 29393
 test_dns_interval = 3600
 test_enabled = true
 test_http_interval = 3600
