@@ -10,7 +10,6 @@ resource "thousandeyes_http_server" "http" {
   url                 = each.value.test_url
   enabled             = var.test_enabled
   bgp_measurements    = var.bgp
-  use_public_bgp      = var.bgp
   #agents = local.agentRPi_id
   dynamic "agents" {
     for_each = local.agentRPi_id
