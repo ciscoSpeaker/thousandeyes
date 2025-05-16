@@ -26,7 +26,7 @@ resource "thousandeyes_http_server" "http" {
   dynamic "bgp_monitors" {
     for_each = local.bgpmonitor_id
     content {
-      monitor_id = bgp_monitors.value
+      monitor_id = tonumber(bgp_monitors.value)
     }
   }
 }

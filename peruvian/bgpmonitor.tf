@@ -8,7 +8,3 @@ locals {
 #output "bgpmonitor_id" {
 #  value = local.bgpmonitor_id
 #}
-
-#output "bgpmonitor_name" {
-#  value = local.bgpmonitor_name
-#}
