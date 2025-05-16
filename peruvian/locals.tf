@@ -1,7 +1,7 @@
-locals {
-  bgpmonitor = csvdecode(file("${path.module}/bgpmonitor.csv"))
-  bgpmonitor_id  = [for row in local.bgpmonitor : tonumber(row.monitorId)]
-}
+#locals {
+#  bgpmonitor = csvdecode(file("${path.module}/bgpmonitor.csv"))
+#  bgpmonitor_id  = [for row in local.bgpmonitor : tonumber(row.monitorId)]
+#}
 
 locals {
   HTTPalerts = csvdecode(file("${path.module}/alertsHTTP.csv"))

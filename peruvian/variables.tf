@@ -39,6 +39,10 @@ variable "bgp" {
   type  = string
 }
 
+variable "bgp_monitor" {
+  type  = number
+}
+
 variable "target_time" {
   type  = number
 }
