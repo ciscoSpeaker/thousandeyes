@@ -39,10 +39,6 @@ variable "bgp" {
   type  = string
 }
 
-variable "monitor_id" {
-  type  = number
-}
-
 variable "target_time" {
   type  = number
 }

@@ -20,9 +20,6 @@ resource "thousandeyes_http_server" "http" {
       rule_id = alert_rules.value
     }
   }
-  bgp_monitors {
-    monitor_id = 29393
-  }
 }
 
 resource "thousandeyes_dns_trace" "dns" {
