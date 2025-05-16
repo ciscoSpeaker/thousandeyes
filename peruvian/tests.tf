@@ -1,7 +1,7 @@
 
 resource "thousandeyes_http_server" "http" {
   for_each            = tomap({ for inst in local.tests : inst.test_resource => inst })
-  test_name           =  each.value.test_name
+  test_name           = each.value.test_name
   interval            = var.test_http_interval
   alerts_enabled      = var.alerts
   url                 = each.value.test_url
