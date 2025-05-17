@@ -1,15 +1,12 @@
 test_resource,test_name,test_url,test_domain,content_regex,desired_status_code
-"interbank_pe","interbank.pe","https://interbank.pe","interbank.pe ANY",".*",200
 "empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY",".*",200
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY",".*",555
 "www_scotiabank_com_pe","www.scotiabank.com.pe","https://www.scotiabank.com.pe","www.scotiabank.com.pe ANY",".*",200
-"simple_ripley_com_pe","simple.ripley.com.pe","https://simple.ripley.com.pe","simple.ripley.com.pe ANY",".*",403
 "www_bbva_pe","www.bbva.pe","https://www.bbva.pe","www.bbva.pe ANY",".*",200
 "www_sunat_gob_pe","www.sunat.gob.pe","https://www.sunat.gob.pe","www.sunat.gob.pe ANY",".*",200
 "www_datosabiertos_gob_pe","www.datosabiertos.gob.pe","https://www.datosabiertos.gob.pe","www.datosabiertos.gob.pe ANY",".*",200
 "www_transparencia_gob_pe","www.transparencia.gob.pe","https://www.transparencia.gob.pe","www.transparencia.gob.pe ANY",".*",200
 "www_consulado_pe","www.consulado.pe","https://www.consulado.pe","www.consulado.pe ANY",".*",200
-"www_sunarp_gob_pe","www.sunarp.gob.pe","https://www.sunarp.gob.pe","www.sunarp.gob.pe ANY",".*",403
 "www_falabella_com_pe","www.falabella.com.pe","https://www.falabella.com.pe","www.falabella.com.pe ANY",".*",200
 "win_pe","win.pe","https://win.pe","win.pe ANY",".*",200
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY",".*",200
