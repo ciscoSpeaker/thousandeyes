@@ -24,26 +24,26 @@ resource "thousandeyes_http_server" "http" {
   }
 }
 
-resource "thousandeyes_dns_trace" "dns" {
-  for_each            = { for test in local.tests : test.test_resource => test }
-  test_name           = each.value.test_name
-  interval            = var.test_dns_interval
-  alerts_enabled      = var.alerts
-  domain              = each.value.test_domain
-  enabled             = var.test_enabled
-  dynamic "agents" {
-    for_each = local.agentPeru_id
-    content  {
-    agent_id   = agents.value
-    }
-  }
-  dynamic "alert_rules" {
-    for_each = local.DNSalerts_id
-    content {
-      rule_id = alert_rules.value
-    }
-  }
-}
+#resource "thousandeyes_dns_trace" "dns" {
+#  for_each            = { for test in local.tests : test.test_resource => test }
+#  test_name           = each.value.test_name
+#  interval            = var.test_dns_interval
+#  alerts_enabled      = var.alerts
+#  domain              = each.value.test_domain
+#  enabled             = var.test_enabled
+#  dynamic "agents" {
+#    for_each = local.agentPeru_id
+#    content  {
+#    agent_id   = agents.value
+#    }
+#  }
+#  dynamic "alert_rules" {
+#    for_each = local.DNSalerts_id
+#    content {
+#      rule_id = alert_rules.value
+#    }
+#  }
+#}
 
 #resource "thousandeyes_web_transaction" "transaction" {
 #  for_each = tomap({ for inst in local.transaction : inst.test_resource => inst })
