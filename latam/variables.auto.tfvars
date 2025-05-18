@@ -1,7 +1,7 @@
 te_timeout = 1000
 
 test_enabled = true
-alerts       = false
+alerts       = true
 bgp          = true
 dscp         = 46
 
