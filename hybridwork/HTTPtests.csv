@@ -6,3 +6,4 @@ test_resource,test_name,test_url,content_regex,desired_status_code
 "webex_cisco","webex.cisco","https://cisco.webex.com","",200
 "concur_cisco","concur.cisco","https://concur.cisco.com","",200
 "jobs_cisco","jobs.cisco","https://jobs.cisco.com","",200
+"vpn_auto_cisco","vpn.auto.cisco","https://58d0.vpn.sse.cisco.com/CiscoSecureAccessVPN","",200
