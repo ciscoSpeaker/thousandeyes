@@ -3,14 +3,14 @@ te_timeout = 1000
 # HTTP Test
 http_test_enabled        = true
 http_test_interval       = 3600
-http_test_alerts_enabled = true
+http_test_alerts_enabled = false
 http_test_bgp            = true
 http_test_use_public_bgp = true
 
 # Voice Test
 voice_test_enabled        = true
 voice_test_interval       = 3600
-voice_test_alerts_enabled = true
+voice_test_alerts_enabled = false
 voice_test_bgp            = true
 voice_test_use_public_bgp = true
 voice_test_dscp_id        = 46
