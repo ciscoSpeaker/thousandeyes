@@ -3,7 +3,7 @@ te_timeout = 1000
 # HTTP Test
 http_test_enabled        = true
 http_test_interval       = 3600
-http_test_alerts_enabled = false
+http_test_alerts_enabled = true
 http_test_bgp            = true
 http_test_use_public_bgp = true
 
