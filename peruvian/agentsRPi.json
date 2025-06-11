@@ -9,12 +9,12 @@
                 "10.0.9.102"
             ],
             "publicIpAddresses": [
-                "201.230.137.195"
+                "200.121.48.125"
             ],
-            "lastSeen": "2025-05-21T03:43:56Z",
+            "lastSeen": "2025-06-11T15:14:32Z",
             "network": "TELECOM S.A.C. (AS 265691)",
             "targetForTests": "192.168.18.122",
-            "utilization": 0,
+            "utilization": 3,
             "agentId": "1349564",
             "agentName": "pasco",
             "agentType": "enterprise",
@@ -51,19 +51,19 @@
             "agentState": "online",
             "prefix": "179.7.15.0/24",
             "ipAddresses": [
-                "192.168.1.2",
+                "192.168.1.9",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b",
                 "10.0.10.101",
                 "10.0.9.101"
             ],
             "publicIpAddresses": [
-                "179.7.15.217",
+                "179.7.15.89",
                 "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
             ],
-            "lastSeen": "2025-05-21T03:43:46Z",
+            "lastSeen": "2025-06-11T15:14:22Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "192.168.1.31",
-            "utilization": 0,
+            "utilization": 3,
             "agentId": "1437023",
             "agentName": "sullana",
             "agentType": "enterprise",
@@ -79,20 +79,20 @@
                 {
                     "interfaceName": "tun0",
                     "ipAddresses": [
+                        "10.0.10.101"
+                    ]
+                },
+                {
+                    "interfaceName": "tun1",
+                    "ipAddresses": [
                         "10.0.9.101"
                     ]
                 },
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.1.2",
+                        "192.168.1.9",
                         "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
-                    ]
-                },
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.101"
                     ]
                 }
             ]
@@ -108,10 +108,10 @@
             "publicIpAddresses": [
                 "181.65.207.66"
             ],
-            "lastSeen": "2025-05-21T03:43:50Z",
+            "lastSeen": "2025-06-11T15:14:49Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "10.153.2.16",
-            "utilization": 0,
+            "utilization": 3,
             "agentId": "1440743",
             "agentName": "moquegua",
             "agentType": "enterprise",
@@ -125,9 +125,9 @@
             "hostname": "moquegua",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun1",
+                    "interfaceName": "tun0",
                     "ipAddresses": [
-                        "10.0.10.103"
+                        "10.0.9.103"
                     ]
                 },
                 {
@@ -137,9 +137,9 @@
                     ]
                 },
                 {
-                    "interfaceName": "tun0",
+                    "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.9.103"
+                        "10.0.10.103"
                     ]
                 }
             ]
@@ -149,19 +149,19 @@
             "prefix": "179.6.155.0/24",
             "ipAddresses": [
                 "192.168.0.6",
-                "2800:200:ff30:16e1::4",
+                "2800:200:ff30:16e1::1",
                 "10.0.10.105",
                 "10.0.9.105",
                 "2800:200:ff30:16e1:da3a:ddff:fe7f:323c"
             ],
             "publicIpAddresses": [
-                "179.6.164.198",
-                "2800:200:ff30:16e1::4"
+                "179.6.164.42",
+                "2800:200:ff30:16e1::1"
             ],
-            "lastSeen": "2025-05-21T03:43:53Z",
+            "lastSeen": "2025-06-11T15:14:42Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "10.153.2.220",
-            "utilization": 0,
+            "utilization": 4,
             "agentId": "1440878",
             "agentName": "arequipa",
             "agentType": "enterprise",
@@ -175,12 +175,6 @@
             "hostname": "arequipa",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.105"
-                    ]
-                },
-                {
                     "interfaceName": "tun0",
                     "ipAddresses": [
                         "10.0.9.105"
@@ -189,63 +183,15 @@
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "2800:200:ff30:16e1::4",
+                        "2800:200:ff30:16e1::1",
                         "192.168.0.6",
                         "2800:200:ff30:16e1:da3a:ddff:fe7f:323c"
                     ]
-                }
-            ]
-        },
-        {
-            "agentState": "online",
-            "prefix": "179.6.48.0/24",
-            "ipAddresses": [
-                "192.168.0.218",
-                "2800:200:f0c0:31ec:31de:f932:c552:7905",
-                "10.0.9.100",
-                "fdaa:bbcc:ddee:0:a94d:ae23:5cc2:2ab2",
-                "2800:200:f0c0:31ec:180d:85b2:a91a:1103",
-                "10.0.10.100"
-            ],
-            "publicIpAddresses": [
-                "179.6.48.136",
-                "2800:200:f0c0:31ec:31de:f932:c552:7905"
-            ],
-            "lastSeen": "2025-05-21T03:43:48Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
-            "targetForTests": "192.168.0.35",
-            "utilization": 0,
-            "agentId": "1441859",
-            "agentName": "mathew",
-            "agentType": "enterprise",
-            "countryId": "PE",
-            "location": "Piura, Peru",
-            "enabled": true,
-            "verifySslCertificates": true,
-            "keepBrowserCache": false,
-            "createdDate": "2025-03-24T06:15:17Z",
-            "ipv6Policy": "force-ipv4",
-            "hostname": "mathew",
-            "interfaceIpMapping": [
+                },
                 {
                     "interfaceName": "tun1",
                     "ipAddresses": [
-                        "10.0.9.100"
-                    ]
-                },
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.10.100"
-                    ]
-                },
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "192.168.0.218",
-                        "fdaa:bbcc:ddee:0:a94d:ae23:5cc2:2ab2",
-                        "2800:200:f0c0:31ec:180d:85b2:a91a:1103",
-                        "2800:200:f0c0:31ec:31de:f932:c552:7905"
+                        "10.0.10.105"
                     ]
                 }
             ]
@@ -254,17 +200,17 @@
             "agentState": "online",
             "prefix": "179.6.48.0/24",
             "ipAddresses": [
-                "192.168.18.225",
+                "192.168.18.216",
                 "10.0.10.104",
                 "10.0.9.104"
             ],
             "publicIpAddresses": [
                 "38.25.5.172"
             ],
-            "lastSeen": "2025-05-21T03:44:05Z",
+            "lastSeen": "2025-06-11T15:14:35Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "192.168.0.35",
-            "utilization": 0,
+            "utilization": 3,
             "agentId": "1451661",
             "agentName": "corales",
             "agentType": "enterprise",
@@ -278,6 +224,12 @@
             "hostname": "corales",
             "interfaceIpMapping": [
                 {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.18.216"
+                    ]
+                },
+                {
                     "interfaceName": "tun0",
                     "ipAddresses": [
                         "10.0.9.104"
@@ -288,12 +240,6 @@
                     "ipAddresses": [
                         "10.0.10.104"
                     ]
-                },
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "192.168.18.225"
-                    ]
                 }
             ]
         },
@@ -301,16 +247,17 @@
             "agentState": "online",
             "prefix": "179.6.48.0/24",
             "ipAddresses": [
-                "198.51.100.4",
-                "fd76:c524:6dab::4"
+                "198.51.100.2",
+                "fd76:c524:6dab::2"
             ],
             "publicIpAddresses": [
-                "179.6.48.136",
-                "fd76:c524:6dab::4"
+                "179.6.48.8",
+                "fd76:c524:6dab::2"
             ],
-            "lastSeen": "2025-05-21T03:44:17Z",
+            "lastSeen": "2025-06-11T15:14:17Z",
             "network": "Telmex Peru S.A. (AS 12252)",
             "targetForTests": "179.6.48.136",
+            "utilization": 6,
             "agentId": "1473493",
             "agentName": "palmeras",
             "agentType": "enterprise",
@@ -320,14 +267,54 @@
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-05-21T03:38:33Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "m0C7BC8C867BD-1000000000",
             "interfaceIpMapping": [
                 {
                     "interfaceName": "host",
                     "ipAddresses": [
-                        "fd76:c524:6dab::4",
-                        "198.51.100.4"
+                        "198.51.100.2",
+                        "fd76:c524:6dab::2"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "179.6.48.0/24",
+            "ipAddresses": [
+                "192.168.10.77",
+                "10.0.9.106"
+            ],
+            "publicIpAddresses": [
+                "179.6.48.8"
+            ],
+            "lastSeen": "2025-06-11T15:14:33Z",
+            "network": "Telmex Peru S.A. (AS 12252)",
+            "targetForTests": "192.168.10.77",
+            "utilization": 2,
+            "agentId": "1478947",
+            "agentName": "bernal",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Piura, Peru",
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-05-30T03:38:04Z",
+            "ipv6Policy": "force-ipv4",
+            "hostname": "bernal",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "tun0",
+                    "ipAddresses": [
+                        "10.0.9.106"
+                    ]
+                },
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.10.77"
                     ]
                 }
             ]
