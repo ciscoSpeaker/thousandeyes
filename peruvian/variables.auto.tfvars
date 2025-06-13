@@ -1,10 +1,10 @@
 te_timeout = 1000
 
-alerts  = true
+alerts  = false
 bgp = false
 test_dns_interval = 3600
 test_enabled = true
-test_http_interval = 300
+test_http_interval = 3600
 test_transaction_interval = 3600
 test_vpn_interval = 3600
 target_time = 60
