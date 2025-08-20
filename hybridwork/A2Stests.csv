@@ -4,5 +4,4 @@ test_resource,test_name,server,port
 "SanJose_cisco","SanJose.cisco","sjc-vpn-cluster.cisco.com",443
 "Amsterdam_cisco","Amsterdam.cisco","ams-vpn-cluster.cisco.com",443
 "Bangalore_cisco","Bangalore.cisco","bangalore-vpn-cluster.cisco.com",443
-"toparpa_descubre","toparpa.descubre","toparpa.descubre.app",1194
-"cary_descubre","cary.descubre","cary.descubre.app",1194
+"oregon_descubre","oregon.descubre","oregon.descubre.app",1194
