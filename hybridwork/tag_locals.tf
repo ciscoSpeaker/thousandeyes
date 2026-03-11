@@ -6,12 +6,17 @@ locals {
     if lower(trimspace(row.enabled)) == "true"
   ]
 
-  unique_tags = {
+  unique_tags_grouped = {
     for row in local.enabled_tag_assignment_rows :
-    "${row.assignment_key}:${row.assignment_value}:${row.tag_object_type}" => {
-      key         = row.assignment_key
-      value       = row.assignment_value
-      object_type = row.tag_object_type
+    "${row.assignment_key}:${row.assignment_value}:${row.tag_object_type}" => row...
+  }
+
+  unique_tags = {
+    for tag_key, rows in local.unique_tags_grouped :
+    tag_key => {
+      key         = rows[0].assignment_key
+      value       = rows[0].assignment_value
+      object_type = rows[0].tag_object_type
     }
   }
 
