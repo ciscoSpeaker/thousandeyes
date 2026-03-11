@@ -6,4 +6,8 @@ resource "thousandeyes_tag" "csv_tags" {
   object_type = each.value.object_type
   icon        = "LABEL"
   access_type = "all"
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }

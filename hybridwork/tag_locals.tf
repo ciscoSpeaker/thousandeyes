@@ -8,7 +8,7 @@ locals {
 
   unique_tags_grouped = {
     for row in local.enabled_tag_assignment_rows :
-    "${row.tag_object_type}/${row.assignment_key}/${row.assignment_value}" => row...
+    "${row.assignment_key}:${row.assignment_value}:${row.tag_object_type}" => row...
   }
 
   unique_tags = {
@@ -32,20 +32,5 @@ locals {
       && row.assignment_value == tag.value
       && row.tag_object_type == tag.object_type
     ]
-  }
-
-  # Existing tags already present in ThousandEyes.
-  # Keep only the ones you want Terraform to adopt/manage.
-  existing_tag_ids = {
-    "test/service/vpn"                    = "1d77720b-d8ad-49cc-a87b-50206eaf701c"
-    "endpoint-test/service/collaboration" = "57d0f77c-1752-4164-96c1-742e461356a7"
-    "test/service/ciscotools"             = "5bfefb8f-8d4e-41a8-946a-e52e720cc35e"
-    "test/service/collaboration"          = "c46f7ba9-f32c-4ab3-9b87-dc6c06115a99"
-  }
-
-  # Only import existing tags that are actually requested by the CSV.
-  importable_existing_tags = {
-    for k, v in local.existing_tag_ids : k => v
-    if contains(keys(local.unique_tags), k)
   }
 }
