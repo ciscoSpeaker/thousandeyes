@@ -7,7 +7,7 @@ resource "thousandeyes_tag" "csv_tags" {
   icon        = "LABEL"
   access_type = "all"
 
-  lifecycle {
-    prevent_destroy = true
-  }
+#  lifecycle {
+#    prevent_destroy = true
+#  }
 }
