@@ -33,4 +33,11 @@ locals {
       && row.tag_object_type == tag.object_type
     ]
   }
+
+  existing_tag_ids = {
+    "thousandeyes_service:ciscotools:test"              = "48088fc5-c8f4-42b9-a09e-2c366100aa94"
+    "thousandeyes_service:collaboration:endpoint-test" = "d27e30e0-ef94-403a-b715-15bf63e7e778"
+    "thousandeyes_service:collaboration:test"          = "145adca8-7ef4-4d98-b463-f9ae51a905f6"
+    "thousandeyes_service:vpn:test"                    = "1aaef4d0-49fe-4579-8464-5d6740c7d396"
+  }
 }

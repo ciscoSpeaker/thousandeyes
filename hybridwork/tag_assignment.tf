@@ -1,7 +1,7 @@
 resource "thousandeyes_tag_assignment" "csv_assignments" {
   for_each = local.grouped_assignments
 
-  tag_id = thousandeyes_tag.csv_tags[each.key].id
+  tag_id = local.existing_tag_ids[each.key]
 
   dynamic "assignments" {
     for_each = each.value
