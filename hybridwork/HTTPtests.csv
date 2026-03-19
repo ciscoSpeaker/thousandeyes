@@ -7,4 +7,4 @@ test_resource,test_name,test_url,content_regex,desired_status_code
 "concur_cisco","concur.cisco","https://concur.cisco.com","",200
 "jobs_cisco","jobs.cisco","https://jobs.cisco.com","",200
 "vpn_auto_cisco","vpn.auto.cisco","https://58d0.vpn.sse.cisco.com/CiscoSecureAccessVPN","",200
-"wwwin_cisco","wwwin.cisco","https://wwin.cisco.com","",200
+"wwwin_cisco","wwwin.cisco","https://wwwin.cisco.com","",200
