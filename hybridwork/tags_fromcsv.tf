@@ -1,4 +1,4 @@
-resource "thousandeyes_tag" "csv_tags" {
+resource "thousandeyes_tag" "csv_new_tags" {
   for_each = local.tags_to_create
 
   key         = each.value.key
