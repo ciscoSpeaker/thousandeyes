@@ -40,4 +40,10 @@ locals {
     "thousandeyes_service:collaboration:test"          = "145adca8-7ef4-4d98-b463-f9ae51a905f6"
     "thousandeyes_service:vpn:test"                    = "1aaef4d0-49fe-4579-8464-5d6740c7d396"
   }
+
+  tags_to_create = {
+    for tag_key, tag in local.unique_tags :
+    tag_key => tag
+    if !contains(keys(local.existing_tag_ids), tag_key)
+  }
 }
