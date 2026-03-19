@@ -19,6 +19,7 @@ thousandeyes_service,ciscotools,test,7070135,test,jobs.cisco,true
 thousandeyes_service,ciscotools,test,7070061,test,salesconnect.cisco,true
 thousandeyes_service,ciscotools,test,7070060,test,sharepoint.cisco,true
 thousandeyes_service,ciscotools,test,7070062,test,workday.cisco,true
+thousandeyes_service,ciscotools,test,8336566,test,wwin.cisco,true
 thousandeyes_service,collaboration,endpoint-test,374591,endpoint-test,cisco.webex,true
 thousandeyes_service,collaboration,endpoint-test,374597,endpoint-test,zoom,true
 thousandeyes_service,collaboration,endpoint-test,374601,endpoint-test,m365.outlook,true
