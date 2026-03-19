@@ -5,7 +5,7 @@ resource "thousandeyes_tag" "csv_tags" {
   value       = each.value.value
   object_type = each.value.object_type
   #icon        = "LABEL"
-  access_type = "all"
+  #access_type = "all"
 
 #  lifecycle {
 #    prevent_destroy = true
