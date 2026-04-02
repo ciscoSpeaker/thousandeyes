@@ -15,3 +15,5 @@ test_resource,test_name,test_url,content_regex,desired_status_code
 "education_splunk","education.splunk","https://education.splunk.com","",200
 "pluralsight","pluralsight","https://app.pluralsight.com","",200
 "meraki_cisco","meraki.cisco","https://account.meraki.com/login","",200
+"gp_splunk","gp.splunk","https://gp.splunk.com","",200
+"okta_splunk","okta.splunk","https://splunk.okta.com","",200
