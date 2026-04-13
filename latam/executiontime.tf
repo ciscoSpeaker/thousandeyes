@@ -1,8 +1,5 @@
-locals {
-  timenow = timestamp()
-  now = formatdate("hh:mm:ss ZZZ - MMM/DD/YYYY", local.timenow)
-}
+resource "time_static" "execution_time" {}
 
 output "execution_time" {
-  value = local.timenow
+  value = time_static.execution_time.rfc3339
 }

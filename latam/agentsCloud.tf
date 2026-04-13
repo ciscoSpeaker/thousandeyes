@@ -1,17 +1,17 @@
 locals {
   agentsCloudFrom = csvdecode(file("${path.module}/agentsCloudFrom.csv"))
-  agentsCloudFrom_id_name = {for ag_name in local.agentsCloudFrom : ag_name.agent_id => ag_name.agent_name}
-  agentCloudFrom_id = keys(local.agentsCloudFrom_id_name)
-  agentCloudFrom_name = values(local.agentsCloudFrom_id_name) 
-  }
+  agentsCloudTo   = csvdecode(file("${path.module}/agentsCloudTo.csv"))
 
-locals {
-  agentsCloudTo = csvdecode(file("${path.module}/agentsCloudTo.csv"))
-  agentsCloudTo_id_name = {for ag_name in local.agentsCloudTo : ag_name.agent_id => ag_name.agent_name}
-  agentCloudTo_id = keys(local.agentsCloudTo_id_name)
-  agentCloudTo_name = values(local.agentsCloudTo_id_name) 
-  }
+  agentCloudFrom_id = [
+    for ag in local.agentsCloudFrom : tonumber(ag.agent_id)
+  ]
 
-#output "agents_Cloud" {
-#  value = local.agentsCloudTo_id_name
-#}
+  agentsCloudTo_map = {
+    for ag in local.agentsCloudTo : tostring(ag.agent_id) => {
+      agent_id       = tonumber(ag.agent_id)
+      agent_name     = ag.agent_name
+      agent_country  = ag.agent_country
+      agent_location = ag.agent_location
+    }
+  }
+}
