@@ -9,7 +9,6 @@ resource "thousandeyes_http_server" "http" {
   desired_status_code  = tonumber(each.value.desired_status_code)
   enabled              = var.test_enabled
   bgp_measurements     = var.bgp
-  #agents = local.agentRPi_id
   dynamic "agents" {
     for_each = local.agentPeru_id
     content  {
