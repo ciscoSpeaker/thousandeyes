@@ -2,66 +2,18 @@
     "agents": [
         {
             "agentState": "online",
-            "prefix": "38.25.112.0/24",
-            "ipAddresses": [
-                "192.168.120.12",
-                "10.0.10.102",
-                "10.0.9.102"
-            ],
-            "publicIpAddresses": [
-                "201.230.137.195"
-            ],
-            "lastSeen": "2025-06-19T22:35:43Z",
-            "network": "TELECOM S.A.C. (AS 265691)",
-            "targetForTests": "192.168.18.122",
-            "utilization": 0,
-            "agentId": "1349564",
-            "agentName": "pasco",
-            "agentType": "enterprise",
-            "countryId": "PE",
-            "location": "Pasco, Peru",
-            "enabled": true,
-            "verifySslCertificates": true,
-            "keepBrowserCache": false,
-            "createdDate": "2024-07-08T03:37:10Z",
-            "ipv6Policy": "force-ipv4",
-            "hostname": "pasco",
-            "interfaceIpMapping": [
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.102"
-                    ]
-                },
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "192.168.120.12"
-                    ]
-                },
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.102"
-                    ]
-                }
-            ]
-        },
-        {
-            "agentState": "online",
             "prefix": "179.7.15.0/24",
             "ipAddresses": [
-                "192.168.1.3",
-                "2800:200:fc50:4ad:da3a:ddff:fe7f:320b",
-                "10.0.10.101",
-                "10.0.9.101"
+                "192.168.1.2",
+                "2800:200:fc50:12b:da3a:ddff:fe7f:320b",
+                "10.0.8.101"
             ],
             "publicIpAddresses": [
-                "179.7.15.89",
-                "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
+                "179.7.15.148",
+                "2800:200:fc50:12b:da3a:ddff:fe7f:320b"
             ],
-            "lastSeen": "2025-06-19T22:34:51Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
+            "lastSeen": "2026-04-13T05:47:32Z",
+            "network": "America Movil Peru S.A.C. (AS 12252)",
             "targetForTests": "192.168.1.31",
             "utilization": 0,
             "agentId": "1437023",
@@ -69,6 +21,10 @@
             "agentType": "enterprise",
             "countryId": "PE",
             "location": "Sullana, Peru",
+            "coordinates": {
+                "latitude": -4.90389,
+                "longitude": -80.68528
+            },
             "enabled": true,
             "verifySslCertificates": true,
             "keepBrowserCache": false,
@@ -77,22 +33,16 @@
             "hostname": "sullana",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.10.101"
-                    ]
-                },
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.9.101"
-                    ]
-                },
-                {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.1.3",
-                        "2800:200:fc50:4ad:da3a:ddff:fe7f:320b"
+                        "192.168.1.2",
+                        "2800:200:fc50:12b:da3a:ddff:fe7f:320b"
+                    ]
+                },
+                {
+                    "interfaceName": "tun-oregon",
+                    "ipAddresses": [
+                        "10.0.8.101"
                     ]
                 }
             ]
@@ -101,15 +51,14 @@
             "agentState": "online",
             "prefix": "179.6.155.0/24",
             "ipAddresses": [
-                "192.168.3.6",
-                "10.0.10.103",
-                "10.0.9.103"
+                "192.168.1.38",
+                "10.0.8.105"
             ],
             "publicIpAddresses": [
-                "181.65.207.70"
+                "190.42.219.93"
             ],
-            "lastSeen": "2025-06-19T22:35:07Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
+            "lastSeen": "2026-04-13T05:47:28Z",
+            "network": "America Movil Peru S.A.C. (AS 12252)",
             "targetForTests": "10.153.2.16",
             "utilization": 0,
             "agentId": "1440743",
@@ -117,81 +66,27 @@
             "agentType": "enterprise",
             "countryId": "PE",
             "location": "Moquegua, Peru",
+            "coordinates": {
+                "latitude": -16.83662,
+                "longitude": -70.91992
+            },
             "enabled": true,
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-03-21T04:20:18Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "moquegua",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun1",
+                    "interfaceName": "tun-oregon",
                     "ipAddresses": [
-                        "10.0.10.103"
+                        "10.0.8.105"
                     ]
                 },
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.3.6"
-                    ]
-                },
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.103"
-                    ]
-                }
-            ]
-        },
-        {
-            "agentState": "online",
-            "prefix": "179.6.155.0/24",
-            "ipAddresses": [
-                "192.168.0.6",
-                "2800:200:ff30:13df::1",
-                "10.0.10.105",
-                "10.0.9.105",
-                "2800:200:ff30:13df:da3a:ddff:fe7f:323c"
-            ],
-            "publicIpAddresses": [
-                "179.6.164.149",
-                "2800:200:ff30:13df::1"
-            ],
-            "lastSeen": "2025-06-19T22:35:23Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
-            "targetForTests": "10.153.2.220",
-            "utilization": 0,
-            "agentId": "1440878",
-            "agentName": "arequipa",
-            "agentType": "enterprise",
-            "countryId": "PE",
-            "location": "Arequipa, Peru",
-            "enabled": true,
-            "verifySslCertificates": true,
-            "keepBrowserCache": false,
-            "createdDate": "2025-03-21T06:45:51Z",
-            "ipv6Policy": "prefer-ipv6",
-            "hostname": "arequipa",
-            "interfaceIpMapping": [
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.105"
-                    ]
-                },
-                {
-                    "interfaceName": "wlan0",
-                    "ipAddresses": [
-                        "192.168.0.6",
-                        "2800:200:ff30:13df::1",
-                        "2800:200:ff30:13df:da3a:ddff:fe7f:323c"
-                    ]
-                },
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.105"
+                        "192.168.1.38"
                     ]
                 }
             ]
@@ -200,15 +95,14 @@
             "agentState": "online",
             "prefix": "179.6.48.0/24",
             "ipAddresses": [
-                "192.168.18.240",
-                "10.0.10.104",
-                "10.0.9.104"
+                "192.168.18.232",
+                "10.0.8.102"
             ],
             "publicIpAddresses": [
-                "38.25.5.172"
+                "38.25.2.19"
             ],
-            "lastSeen": "2025-06-19T22:35:06Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
+            "lastSeen": "2026-04-13T05:47:33Z",
+            "network": "America Movil Peru S.A.C. (AS 12252)",
             "targetForTests": "192.168.0.35",
             "utilization": 0,
             "agentId": "1451661",
@@ -216,29 +110,27 @@
             "agentType": "enterprise",
             "countryId": "PE",
             "location": "Piura, Peru",
+            "coordinates": {
+                "latitude": -5.19449,
+                "longitude": -80.63282
+            },
             "enabled": true,
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-04-13T04:23:00Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "corales",
             "interfaceIpMapping": [
                 {
+                    "interfaceName": "tun-oregon",
+                    "ipAddresses": [
+                        "10.0.8.102"
+                    ]
+                },
+                {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.18.240"
-                    ]
-                },
-                {
-                    "interfaceName": "tun0",
-                    "ipAddresses": [
-                        "10.0.9.104"
-                    ]
-                },
-                {
-                    "interfaceName": "tun1",
-                    "ipAddresses": [
-                        "10.0.10.104"
+                        "192.168.18.232"
                     ]
                 }
             ]
@@ -247,50 +139,14 @@
             "agentState": "online",
             "prefix": "179.6.48.0/24",
             "ipAddresses": [
-                "198.51.100.3",
-                "fd76:c524:6dab::3"
+                "10.219.57.202",
+                "10.0.8.104"
             ],
             "publicIpAddresses": [
-                "179.6.48.8",
-                "fd76:c524:6dab::3"
+                "179.7.83.93"
             ],
-            "lastSeen": "2025-06-19T22:35:24Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
-            "targetForTests": "179.6.48.136",
-            "utilization": 11,
-            "agentId": "1473493",
-            "agentName": "palmeras",
-            "agentType": "enterprise",
-            "countryId": "PE",
-            "location": "Piura, Peru",
-            "enabled": true,
-            "verifySslCertificates": true,
-            "keepBrowserCache": false,
-            "createdDate": "2025-05-21T03:38:33Z",
-            "ipv6Policy": "prefer-ipv6",
-            "hostname": "m0C7BC8C867BD-1000000000",
-            "interfaceIpMapping": [
-                {
-                    "interfaceName": "host",
-                    "ipAddresses": [
-                        "198.51.100.3",
-                        "fd76:c524:6dab::3"
-                    ]
-                }
-            ]
-        },
-        {
-            "agentState": "online",
-            "prefix": "179.6.48.0/24",
-            "ipAddresses": [
-                "192.168.10.77",
-                "10.0.9.106"
-            ],
-            "publicIpAddresses": [
-                "179.6.48.8"
-            ],
-            "lastSeen": "2025-06-19T22:36:05Z",
-            "network": "Telmex Peru S.A. (AS 12252)",
+            "lastSeen": "2026-04-13T05:47:51Z",
+            "network": "America Movil Peru S.A.C. (AS 12252)",
             "targetForTests": "192.168.10.77",
             "utilization": 0,
             "agentId": "1478947",
@@ -298,23 +154,211 @@
             "agentType": "enterprise",
             "countryId": "PE",
             "location": "Piura, Peru",
+            "coordinates": {
+                "latitude": -5.19449,
+                "longitude": -80.63282
+            },
             "enabled": true,
             "verifySslCertificates": true,
             "keepBrowserCache": false,
             "createdDate": "2025-05-30T03:38:04Z",
-            "ipv6Policy": "force-ipv4",
+            "ipv6Policy": "prefer-ipv6",
             "hostname": "bernal",
             "interfaceIpMapping": [
                 {
-                    "interfaceName": "tun0",
+                    "interfaceName": "tun-oregon",
                     "ipAddresses": [
-                        "10.0.9.106"
+                        "10.0.8.104"
                     ]
                 },
                 {
                     "interfaceName": "wlan0",
                     "ipAddresses": [
-                        "192.168.10.77"
+                        "10.219.57.202"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "143.105.156.0/23",
+            "ipAddresses": [
+                "192.168.10.10"
+            ],
+            "publicIpAddresses": [
+                "190.43.38.215"
+            ],
+            "lastSeen": "2026-04-13T05:47:36Z",
+            "network": "SpaceX Starlink (AS 14593)",
+            "targetForTests": "192.168.10.10",
+            "utilization": 17,
+            "agentId": "1534099",
+            "agentName": "etelvina",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Trujillo, Peru",
+            "coordinates": {
+                "latitude": -8.11599,
+                "longitude": -79.02998
+            },
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-08-14T17:25:29Z",
+            "ipv6Policy": "prefer-ipv6",
+            "hostname": "etelvina",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "eth0",
+                    "ipAddresses": [
+                        "192.168.10.10"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "129.222.176.0/21",
+            "ipAddresses": [
+                "198.51.100.2",
+                "fd76:c524:6dab::2"
+            ],
+            "publicIpAddresses": [
+                "190.43.38.215",
+                "fd76:c524:6dab::2"
+            ],
+            "lastSeen": "2026-04-13T05:47:44Z",
+            "network": "SpaceX Starlink (AS 14593)",
+            "targetForTests": "129.222.182.3",
+            "utilization": 14,
+            "agentId": "1536781",
+            "agentName": "marinera",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Trujillo, Peru",
+            "coordinates": {
+                "latitude": -8.11599,
+                "longitude": -79.02998
+            },
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-08-19T17:27:09Z",
+            "ipv6Policy": "prefer-ipv6",
+            "hostname": "m0C7BC8C867BD-1000000000",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "host",
+                    "ipAddresses": [
+                        "198.51.100.2",
+                        "fd76:c524:6dab::2"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "online",
+            "prefix": "201.230.137.0/24",
+            "ipAddresses": [
+                "192.168.120.20",
+                "10.0.8.103"
+            ],
+            "publicIpAddresses": [
+                "201.230.137.195"
+            ],
+            "lastSeen": "2026-04-13T05:46:52Z",
+            "network": "Telefonica del Peru S.A.A. (AS 6147)",
+            "targetForTests": "192.168.120.13",
+            "errorDetails": [
+                {
+                    "code": "agent-version-outdated",
+                    "description": "Agent Version 1.234.0 (latest: 1.233.1)"
+                }
+            ],
+            "utilization": 0,
+            "agentId": "1608348",
+            "agentName": "pasco",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Pasco, Peru",
+            "coordinates": {
+                "latitude": -10.5,
+                "longitude": -75.25
+            },
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2025-12-07T04:18:34Z",
+            "ipv6Policy": "prefer-ipv6",
+            "hostname": "pasco",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "tun-oregon",
+                    "ipAddresses": [
+                        "10.0.8.103"
+                    ]
+                },
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.120.20"
+                    ]
+                }
+            ]
+        },
+        {
+            "agentState": "offline",
+            "prefix": "132.251.0.0/24",
+            "ipAddresses": [
+                "192.168.10.60",
+                "10.24.230.104",
+                "192.168.10.135",
+                "10.0.8.9"
+            ],
+            "publicIpAddresses": [
+                "181.64.105.19"
+            ],
+            "lastSeen": "2026-04-05T18:46:04Z",
+            "network": "ENTEL PERU S.A. (AS 21575)",
+            "targetForTests": "10.168.150.206",
+            "agentId": "1621883",
+            "agentName": "toparpa",
+            "agentType": "enterprise",
+            "countryId": "PE",
+            "location": "Trujillo, Peru",
+            "coordinates": {
+                "latitude": -8.11599,
+                "longitude": -79.02998
+            },
+            "enabled": true,
+            "verifySslCertificates": true,
+            "keepBrowserCache": false,
+            "createdDate": "2026-01-29T10:01:15Z",
+            "ipv6Policy": "prefer-ipv6",
+            "hostname": "toparpa",
+            "interfaceIpMapping": [
+                {
+                    "interfaceName": "wlan0",
+                    "ipAddresses": [
+                        "192.168.10.135"
+                    ]
+                },
+                {
+                    "interfaceName": "tun-oregon",
+                    "ipAddresses": [
+                        "10.0.8.9"
+                    ]
+                },
+                {
+                    "interfaceName": "wwan0",
+                    "ipAddresses": [
+                        "10.24.230.104"
+                    ]
+                },
+                {
+                    "interfaceName": "eth0",
+                    "ipAddresses": [
+                        "192.168.10.60"
                     ]
                 }
             ]
