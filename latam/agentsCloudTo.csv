@@ -16,3 +16,7 @@ agent_id,agent_name,agent_country,agent_location
 319326,"Hong Kong (AWS ap-east-1)","HK","Hong Kong"
 56562,"Council Bluffs (GCP us-central1)","US","Council Bluffs"
 59970,"Iowa (Azure centralus)","US","Iowa"
+1470576,"Central Mexico (AWS mx-central-1)","MX","Queretaro, Mexico"
+653656,"Dallas, TX (AWS Local Zone)","US","Dallas, Texas, US"
+600161,"Santiago, Chile (GCP southamerica-west1)","CL","Santiago Metropolitan, Chile"
+1470633,"Rio de Janeiro, Brazil (Azure brazilsoutheast)","BR","Rio de Janeiro, Brazil"
