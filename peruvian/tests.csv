@@ -1,4 +1,8 @@
 test_resource,test_name,test_url,test_domain,content_regex,desired_status_code
+"sis_utec_edu_pe","sis.utec.edu.pe","https://sis.utec.edu.pe/alumno","sis.utec.edu.pe ANY",".*",200
+"upao_instructure_com","upao.instructure.com","https://upao.instructure.com","upao.instructure.com ANY",".*",200
+"portal-postgrado-fiis.vercel_app","portal-postgrado-fiis.vercel.app","https://portal-postgrado-fiis.vercel.app","portal-postgrado-fiis.vercel.app ANY",".*",200
+"aulavirtual_urp_edu_pe","aulavirtual.urp.edu.pe","https://aulavirtual.urp.edu.pe","aulavirtual.urp.edu.pe ANY",".*",200
 "empresas_interbank_pe","empresas.interbank.pe","https://empresas.interbank.pe","empresas.interbank.pe ANY",".*",200
 "www_bn_com_pe","www.bn.com.pe","https://www.bn.com.pe","www.bn.com.pe ANY",".*",555
 "www_scotiabank_com_pe","www.scotiabank.com.pe","https://www.scotiabank.com.pe","www.scotiabank.com.pe ANY",".*",200
