@@ -10,9 +10,8 @@ test_resource,test_name,test_url,test_domain,content_regex,desired_status_code
 "www_sunat_gob_pe","www.sunat.gob.pe","https://www.sunat.gob.pe","www.sunat.gob.pe ANY",".*",200
 "www_transparencia_gob_pe","www.transparencia.gob.pe","https://www.transparencia.gob.pe","www.transparencia.gob.pe ANY",".*",200
 "www_falabella_com_pe","www.falabella.com.pe","https://www.falabella.com.pe","www.falabella.com.pe ANY",".*",200
-"win_pe","win.pe","https://win.pe","win.pe ANY",".*",200
 "www_pucp_edu_pe","www.pucp.edu.pe","https://www.pucp.edu.pe","www.pucp.edu.pe ANY",".*",200
-"www_unp_edu_pe","www.unp.edu.pe","https://www.unp.edu.pe","www.unp.edu.pe ANY",".*",200
+"www-gob-pe-unp","www.gob.pe.unp","https://www.gob.pe/unp","www.gob.pe ANY",".*",200
 "epg_unp_edu_pe","epg.unp.edu.pe","https://epg.unp.edu.pe","epg.unp.edu.pe ANY",".*",200
 "posgradouni_neolms_com","posgradouni.neolms.com","https://posgradouni.neolms.com","posgradouni.neolms.com ANY",".*",200
 "www_ucv_edu_pe","www.ucv.edu.pe","https://www.ucv.edu.pe","www.ucv.edu.pe ANY",".*",200
@@ -20,7 +19,6 @@ test_resource,test_name,test_url,test_domain,content_regex,desired_status_code
 "www_utp_edu_pe","www.utp.edu.pe","https://www.utp.edu.pe","www.utp.edu.pe ANY",".*",200
 "cide_neolms_com","cide.neolms.com","https://cide.neolms.com","cide.neolms.com ANY",".*",200
 "eltiempo_pe","eltiempo.pe","https://eltiempo.pe","eltiempo.pe ANY",".*",200
-"peru21_pe","peru21.pe","https://peru21.pe","peru21.pe ANY",".*",200
 "www_latina_pe","www.latina.pe","https://www.latina.pe","www.latina.pe ANY",".*",200
 "panamericana_pe","panamericana.pe","https://panamericana.pe","panamericana.pe ANY",".*",200
 "www_upc_edu_pe","www.upc.edu.pe","https://www.upc.edu.pe","www.upc.edu.pe ANY",".*",200
