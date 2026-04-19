@@ -25,6 +25,13 @@ resource "thousandeyes_agent_to_agent" "cloud" {
       rule_id = alert_rules.value
     }
   }
+
+  dynamic "bgp_monitors" {
+    for_each = var.bgp ? toset(local.bgpMonitor_ids) : toset([])
+    content {
+      monitor_id = bgp_monitors.value
+    }
+  }
 }
 
 output "cloud_test_names" {
