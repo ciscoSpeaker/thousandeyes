@@ -53,3 +53,9 @@ variable "a2a_alert_rule_ids" {
   type        = list(number)
   default     = []
 }
+
+variable "use_public_bgp" {
+  description = "Use ThousandEyes public BGP monitors globally. Set to false to restrict to selected monitors only."
+  type        = bool
+  default     = false
+}

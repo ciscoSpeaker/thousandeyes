@@ -8,7 +8,7 @@ resource "thousandeyes_agent_to_agent" "cloud" {
   direction        = var.A2A_direction
   protocol         = var.A2A_protocol
   bgp_measurements = var.bgp
-  use_public_bgp   = var.bgp
+  use_public_bgp   = var.use_public_bgp 
   alerts_enabled   = var.alerts
   dscp_id          = var.dscp
 
