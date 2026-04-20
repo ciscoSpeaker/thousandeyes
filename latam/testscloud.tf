@@ -10,11 +10,11 @@ resource "thousandeyes_agent_to_agent" "cloud" {
   bgp_measurements = var.bgp
   use_public_bgp   = var.use_public_bgp
   alerts_enabled   = var.alerts
-  dscp_id          = var.dscp
+  dscp_id          = tostring(var.dscp)
 
-  agents       = toset(local.agentCloudFrom_id)
-  alert_rules  = var.alerts ? toset(local.A2Aalerts_id) : toset([])
-  bgp_monitors = var.bgp ? toset(local.bgpMonitor_ids) : toset([])
+  agents      = toset(local.agentCloudFrom_id)
+  alert_rules = var.alerts ? toset(local.A2Aalerts_id) : toset([])
+  monitors    = var.bgp ? toset(local.bgpMonitor_ids) : toset([])  # ← nombre correcto v3
 }
 
 output "cloud_test_names" {

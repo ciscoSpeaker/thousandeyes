@@ -1,7 +1,6 @@
 locals {
   bgpMonitors = csvdecode(file("${path.module}/bgpMonitors.csv"))
 
-  # v3: bgp_monitors espera Set of String
   bgpMonitor_ids = [
     for m in local.bgpMonitors : tostring(m.monitor_id)
   ]
