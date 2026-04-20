@@ -2,8 +2,9 @@ locals {
   agentsCloudFrom = csvdecode(file("${path.module}/agentsCloudFrom.csv"))
   agentsCloudTo   = csvdecode(file("${path.module}/agentsCloudTo.csv"))
 
+  # v3: agents y alert_rules esperan Set of String, no number
   agentCloudFrom_id = [
-    for ag in local.agentsCloudFrom : tonumber(ag.agent_id)
+    for ag in local.agentsCloudFrom : tostring(ag.agent_id)
   ]
 
   agentsCloudTo_map = {

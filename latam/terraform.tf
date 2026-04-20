@@ -9,7 +9,7 @@ terraform {
   required_providers {
     thousandeyes = {
       source  = "thousandeyes/thousandeyes"
-      version = ">= 3.0.0"    
+      version = ">= 3.0.0"    # ← era = 2.0.10
     }
 
     time = {
