@@ -1,7 +1,7 @@
-te_timeout = 1000
-
+te_timeout                = 1000
 alerts                    = true
-bgp                       = false
+bgp_measurements          = true
+use_public_bgp            = true
 test_dns_interval         = 3600
 test_enabled              = true
 test_http_interval        = 3600

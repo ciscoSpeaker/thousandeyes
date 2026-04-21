@@ -35,7 +35,12 @@ variable "alerts" {
   default = false
 }
 
-variable "bgp" {
+variable "bgp_measurements" {
+  type    = bool
+  default = false
+}
+
+variable "use_public_bgp" {
   type    = bool
   default = false
 }
