@@ -6,30 +6,78 @@ locals {
     for row in local.tag_country_rows : trimspace(row.agent_country_full)
   ]))
 
+  cloud_providers = sort(distinct([
+    for row in local.tag_test_rows : trimspace(row.cloud_provider)
+  ]))
+
+  regions = sort(distinct([
+    for row in local.tag_test_rows : trimspace(row.region_tag)
+  ]))
+
+  cloud_provider_groups = sort(distinct([
+    for row in local.tag_test_rows : trimspace(row.cloud_provider_group)
+  ]))
+
   test_ids = sort(distinct([
     for row in local.tag_test_rows : tostring(row.test_id)
   ]))
 
   tests_by_cloud_provider = {
-    for value in sort(distinct([for row in local.tag_test_rows : trimspace(row.cloud_provider)])) : value => [
+    for value in local.cloud_providers : value => [
       for row in local.tag_test_rows : tostring(row.test_id)
       if trimspace(row.cloud_provider) == value
     ]
   }
 
   tests_by_region = {
-    for value in sort(distinct([for row in local.tag_test_rows : trimspace(row.region_tag)])) : value => [
+    for value in local.regions : value => [
       for row in local.tag_test_rows : tostring(row.test_id)
       if trimspace(row.region_tag) == value
     ]
   }
 
   tests_by_cloud_provider_group = {
-    for value in sort(distinct([for row in local.tag_test_rows : trimspace(row.cloud_provider_group)])) : value => [
+    for value in local.cloud_provider_groups : value => [
       for row in local.tag_test_rows : tostring(row.test_id)
       if trimspace(row.cloud_provider_group) == value
     ]
   }
+}
+
+resource "thousandeyes_tag" "country" {
+  for_each = toset(local.countries)
+
+  key         = "country"
+  value       = each.value
+  object_type = "test"
+  access_type = "all"
+}
+
+resource "thousandeyes_tag" "cloud_provider" {
+  for_each = toset(local.cloud_providers)
+
+  key         = "cloud_provider"
+  value       = each.value
+  object_type = "test"
+  access_type = "all"
+}
+
+resource "thousandeyes_tag" "region" {
+  for_each = toset(local.regions)
+
+  key         = "region"
+  value       = each.value
+  object_type = "test"
+  access_type = "all"
+}
+
+resource "thousandeyes_tag" "cloud_provider_group" {
+  for_each = toset(local.cloud_provider_groups)
+
+  key         = "cloud_provider_group"
+  value       = each.value
+  object_type = "test"
+  access_type = "all"
 }
 
 resource "thousandeyes_tag_assignment" "country" {
