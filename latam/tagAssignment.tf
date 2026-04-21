@@ -88,8 +88,8 @@ resource "thousandeyes_tag_assignment" "country" {
   dynamic "assignments" {
     for_each = local.test_ids
     content {
-      id          = assignments.value
-      object_type = "test"
+      id   = assignments.value
+      type = "test"
     }
   }
 }
@@ -102,8 +102,8 @@ resource "thousandeyes_tag_assignment" "cloud_provider" {
   dynamic "assignments" {
     for_each = local.tests_by_cloud_provider[each.key]
     content {
-      id          = assignments.value
-      object_type = "test"
+      id   = assignments.value
+      type = "test"
     }
   }
 }
@@ -116,8 +116,8 @@ resource "thousandeyes_tag_assignment" "region" {
   dynamic "assignments" {
     for_each = local.tests_by_region[each.key]
     content {
-      id          = assignments.value
-      object_type = "test"
+      id   = assignments.value
+      type = "test"
     }
   }
 }
@@ -130,8 +130,8 @@ resource "thousandeyes_tag_assignment" "cloud_provider_group" {
   dynamic "assignments" {
     for_each = local.tests_by_cloud_provider_group[each.key]
     content {
-      id          = assignments.value
-      object_type = "test"
+      id   = assignments.value
+      type = "test"
     }
   }
 }
